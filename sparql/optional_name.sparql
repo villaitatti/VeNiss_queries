@@ -1,0 +1,16 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+select * where {
+  
+   BIND(<https://veniss.net/resource/source/c1df3912-9679-11ed-bc19-3a5becfe4abd> AS ?subject) 
+  OPTIONAL {
+  	?subject crm:P53_has_former_or_current_location ?information_carrier_type.
+    ?information_carrier_type crm:P2_has_type <https://veniss.net/resource/vocab/information_carrier/type>.
+                              
+      ?information_carrier_type crm:P1_is_identified_by ?abbreviation.
+      ?abbreviation crm:P2_has_type <https://veniss.net/resource/type/abbreviation>;
+                  rdfs:label ?type_label
+  }
+
+
+}

@@ -1,0 +1,33 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX ontology: <http://dbpedia.org/ontology/>
+PREFIX veniss_ontology: <https://veniss.net/ontology#>
+
+SELECT DISTINCT * WHERE { 
+  ?subject a veniss_ontology:Source_Primary;
+    crm:P1_is_identified_by ?appellation.
+
+  optional {
+    ?subject crm:P53_has_former_or_current_location ?location.
+    ?location crm:P2_has_type <https://veniss.net/resource/archival_entity/full_path>.
+  }
+
+  optional {
+    $subject crm:P53_has_former_or_current_location ?medium.
+    $medium crm:P2_has_type <https://veniss.net/resource/type/medium>
+  }
+
+  optional {
+    ?subject crm:P53_has_former_or_current_location ?medium_name.
+    ?medium_name crm:P2_has_type <https://veniss.net/resource/type/location_name>.
+  }
+
+  optional {
+    ?appellation rdf:type crm:E41_Appellation;
+    crm:P2_has_type <https://veniss.net/resource/type/attributed_title>;
+    rdfs:label ?label.
+  }
+
+  bind(<https://veniss.net/resource/source/c1dee2e6-9679-11ed-bc19-3a5becfe4abd> as ?subject)
+}

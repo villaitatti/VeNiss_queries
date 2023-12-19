@@ -1,0 +1,54 @@
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+
+select ?full_path where {
+
+  {
+    select (group_concat(distinct ?lbl; separator=", ") as ?item_label) where {
+      {
+        select ?class ?lbl
+        where {
+          ?item crm:P46i_forms_part_of* ?mid.
+          ?mid crm:P46i_forms_part_of* ?class.
+          ?class rdfs:label ?class_label
+
+          optional {
+            ?class crm:P1_is_identified_by ?acronym.
+            ?acronym a crm:E41_Appellation;
+              crm:P2_has_type <https://veniss.net/resource/type/acronym>;
+              rdfs:label ?acronym_lbl 
+          }
+
+          BIND(COALESCE(?acronym_lbl, ?acronym_lbl, ?class_label) as ?lbl)
+          BIND(<https://veniss.net/resource/archival_entity/a29ccd80-8036-474d-a66e-40948a2b4b7a> as ?item)
+        }
+        group by ?class ?lbl
+        order by desc(count(?mid))
+      }
+    }
+  }
+  
+  optional {
+   	?medium crm:P1_is_identified_by ?abbreviation.
+    ?abbreviation a crm:E41_Appellation;
+      crm:P2_has_type <https://veniss.net/resource/type/abbreviation>;
+      rdfs:label ?abbreviation_lbl
+  }
+  ?medium rdfs:label ?medium_lbl
+  FILTER (lang(?medium_lbl) = 'it')
+  
+  BIND(COALESCE(?abbreviation_lbl, ?abbreviation_lbl, ?medium_lbl) as ?medium_lbl_final)
+	
+  
+  optional {
+    ?medium_title rdfs:label ?medium_title_lbl
+  }
+ 
+  BIND(<https://veniss.net/resource/vocabulary/8eb2c985-f0df-4105-8e80-15f38cbf4c1f> as ?medium)
+  BIND(<https://veniss.net/resource/source/c1dee2e6-9679-11ed-bc19-3a5becfe4abd/medium_title> as ?medium_title)
+  
+  
+  BIND(CONCAT(?item_label, ", ", ?medium_lbl_final, " ", ?medium_title_lbl) as ?full_path)
+}
