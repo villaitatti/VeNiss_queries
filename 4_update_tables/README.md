@@ -4,7 +4,8 @@ Must have a config.ini file with the following content:
 
 ```
 [veniss_database]
-username = ***
+host = ***
+user = ***
 password = ***
-endpoint = ***
+database = ***
 ```
