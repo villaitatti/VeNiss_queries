@@ -7,7 +7,7 @@ CREATE OR REPLACE FUNCTION SS_ALL_year()
   RETURNS TRIGGER
   AS $ALL_year$
 BEGIN
-  INSERT INTO PUBLIC.feature_years(identifier, "year")
+  INSERT INTO PUBLIC.feature_sources(identifier, "year")
     VALUES(NEW.identifier, CASE WHEN NEW."Today" IS TRUE THEN
         'Today'
       WHEN NEW. "1982: Ortofoto" IS TRUE THEN

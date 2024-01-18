@@ -276,7 +276,7 @@ FOR EACH ROW EXECUTE PROCEDURE ALL_year();
 -- ########################################################################################
 CREATE OR REPLACE FUNCTION SGA_ALL_year() RETURNS TRIGGER AS $ALL_year$
    BEGIN
-      INSERT INTO PUBLIC.feature_years(identifier, "year") 
+      INSERT INTO PUBLIC.feature_sources(identifier, "year") 
       VALUES (new.identifier, 
         CASE
           WHEN new."Today" IS TRUE THEN 'Today'

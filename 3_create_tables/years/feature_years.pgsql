@@ -17,8 +17,8 @@ VALUES
 	('1807-10: Censo Stabile, Mappe Napoleoniche', 1807, 1810);
 
 -- Table containing the combination (feature_id, year)
-DROP TABLE IF EXISTS PRODUCTION.feature_years;
-CREATE TABLE PRODUCTION.feature_years(
+DROP TABLE IF EXISTS PRODUCTION.feature_sources;
+CREATE TABLE PRODUCTION.feature_sources(
   identifier VARCHAR(100) NOT NULL,
   "year" VARCHAR(255),
   PRIMARY KEY (identifier, "year")
