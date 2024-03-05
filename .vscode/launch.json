@@ -5,12 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "qgis_sanservolo",
-      "type": "python",
+      "name": "QGIS - SSC (San Secondo)",
+    "type": "debugpy",
+      "cwd": "${workspaceRoot}",
       "request": "launch",
-      "program": "${file}",
+      "program": "${workspaceRoot}/4_update_tables/update.py",
       "console": "integratedTerminal",
-      "args": ["-t","lazzarettovecchio"]
+      "args": ["-t","sansecondo"]
     }
   ]
 }
