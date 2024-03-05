@@ -9,3 +9,5 @@ user = ***
 password = ***
 database = ***
 ```
+
+Execute with `python update.py -t [tablename]`, Table name e.g. "sansecondo", "lazzarettovecchio" etc.
