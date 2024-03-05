@@ -7,9 +7,10 @@ CREATE SCHEMA IF NOT EXISTS PRODUCTION;
 CREATE TABLE PRODUCTION.veniss_data(
   identifier varchar(100) NOT NULL PRIMARY KEY,
   t varchar(255),
-  z integer,
-  geometry GEOMETRY
+  z integer
 );
+
+SELECT AddGeometryColumn('production', 'veniss_data', 'geometry', 3857, 'MULTIPOLYGON', 2);
 
 -- Create a function called when a new feature is added to a specific table
 -- This function creates the same feature in the veniss_data table

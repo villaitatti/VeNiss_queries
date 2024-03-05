@@ -92,7 +92,7 @@ def _1_update_veniss_data(cursor, t_name):
             identifier,
             'Building' AS "t",
             1 AS "z",
-            geometry
+            ST_Transform(geometry, 3857) AS "geometry"
           FROM PUBLIC.{table}
           WHERE NOT EXISTS (SELECT 1 FROM PRODUCTION.veniss_data WHERE PUBLIC.{table}.identifier = PRODUCTION.veniss_data.identifier)
         );"""
