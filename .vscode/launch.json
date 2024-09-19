@@ -6,12 +6,39 @@
   "configurations": [
     {
       "name": "QGIS - SSC (San Secondo)",
-    "type": "debugpy",
+      "type": "debugpy",
       "cwd": "${workspaceRoot}",
       "request": "launch",
       "program": "${workspaceRoot}/4_update_tables/update.py",
       "console": "integratedTerminal",
       "args": ["-t","sansecondo"]
+    },
+    {
+      "name": "QGIS - LZV (Lazzaretto Vecchio)",
+      "type": "debugpy",
+      "cwd": "${workspaceRoot}",
+      "request": "launch",
+      "program": "${workspaceRoot}/4_update_tables/update.py",
+      "console": "integratedTerminal",
+      "args": ["-t","lazzarettovecchio"]
+    },
+    {
+      "name": "QGIS - CRT (Certosa)",
+      "type": "debugpy",
+      "cwd": "${workspaceRoot}",
+      "request": "launch",
+      "program": "${workspaceRoot}/4_update_tables/update.py",
+      "console": "integratedTerminal",
+      "args": ["-t","certosa"]
+    },
+    {
+      "name": "QGIS - SSV (San Servolo)",
+      "type": "debugpy",
+      "cwd": "${workspaceRoot}",
+      "request": "launch",
+      "program": "${workspaceRoot}/4_update_tables/update.py",
+      "console": "integratedTerminal",
+      "args": ["-t","sanservolo"]
     }
   ]
 }

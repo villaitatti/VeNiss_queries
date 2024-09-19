@@ -89,7 +89,7 @@ def _get_start_end(source_name):
 
 
 def _clean_string(string):
-    return string.replace(' ', '_').replace(':', '').replace('-', '_').lower()
+    return string.replace(' ', '_').replace(':', '_').replace('-', '_').lower()
 
 # Generate _connect_to_database function to connect to a remote database
 
@@ -171,7 +171,7 @@ def _2_2_test_trigger_update(cursor, table, test_record_id):
             WHERE identifier = '{test_record_id}';
         """)
         cursor.execute(f"""
-            SELECT geometry FROM PUBLIC.{table} WHERE identifier = '{test_record_id}';
+            SELECT ST_Transform(geometry, 3857) as geometry FROM PUBLIC.{table} WHERE identifier = '{test_record_id}';
         """)
         updated_record = cursor.fetchone()
         if updated_record:
@@ -246,7 +246,7 @@ def _2_create_trigger_update_veniss_data(cursor, t_name):
         # Check if table exists
         if _check_if_table_exists(cursor, f'{table}'):
 
-            print(f'Creating triggers for {t} ...')
+            print(f'Creating triggers for {table} ...')
             # create trigger to call function on update
             query_trigger_update = f"""
               DROP TRIGGER IF EXISTS update_veniss_data ON PUBLIC.{table};
@@ -353,7 +353,7 @@ def _4_create_trigger_update_feature_source(cursor, t_name):
                   BEGIN
                     INSERT INTO PRODUCTION.feature_sources(identifier, "source")
                     SELECT identifier, '{source_name}' as "source"
-                    FROM qgis_lazzarettovecchio_buildings
+                    FROM PUBLIC.{table}
                     WHERE identifier = NEW.identifier AND "{source_name}" is true;
                     RETURN NEW;
                   END;
@@ -400,17 +400,24 @@ def execute_pipeline(table_name):
         print('[2] Creating triggers to update veniss_data ...\n')
         _2_create_trigger_update_veniss_data(cursor, t_name)
         conn.commit()
-        print('\n[2] Testing triggers ...\n')
-        _2_create_trigger_update_veniss_data_test(cursor, t_name)
-        conn.commit()
         print('[2] Done.\n')
-
+        
         print('[3] Update feature_sources if needed ...')
         _3_update_feature_sources(cursor, t_name)
+        print('[3] Done.\n')
         conn.commit()
 
         print('[4] Creating triggers to update feature_sources ...')
         _4_create_trigger_update_feature_source(cursor, t_name)
+        print('[4] Done.\n')
+        conn.commit()
+
+        print('##############################################')
+        print('##                  TESTING                 ##')
+        print('##############################################\n')
+        
+        print('[2] Testing triggers ...\n')
+        _2_create_trigger_update_veniss_data_test(cursor, t_name)
         conn.commit()
 
 

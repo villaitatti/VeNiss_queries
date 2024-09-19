@@ -31,7 +31,7 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_IS_feature()
   AS $INSERT_IS_feature$
 BEGIN
   INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Island', 0, NEW.geometry);
+    VALUES(NEW.identifier, 'Island', 0, ST_Transform(NEW.geometry, 3857));
   RETURN NEW;
 END;
 $INSERT_IS_feature$
@@ -43,7 +43,7 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_OS_feature()
   AS $INSERT_OS_feature$
 BEGIN
   INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Open Space', 1, NEW.geometry);
+    VALUES(NEW.identifier, 'Open Space', 1, ST_Transform(NEW.geometry, 3857));
   RETURN NEW;
 END;
 $INSERT_OS_feature$
@@ -54,7 +54,7 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_WV_feature()
   AS $INSERT_WV_feature$
 BEGIN
   INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Water way', -1, NEW.geometry);
+    VALUES(NEW.identifier, 'Water way', -1, ST_Transform(NEW.geometry, 3857));
   RETURN NEW;
 END;
 $INSERT_WV_feature$
@@ -82,7 +82,7 @@ BEGIN
   UPDATE
     PRODUCTION.veniss_data
   SET
-    geometry = NEW.geometry
+    geometry = ST_Transform(NEW.geometry, 3857)
   WHERE
     identifier = NEW.identifier;
   RETURN NEW;
