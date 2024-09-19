@@ -19,7 +19,7 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_BLDG_feature()
   AS $INSERT_BLDG_feature$
 BEGIN
   INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Buildings', 1, NEW.geometry);
+    VALUES(NEW.identifier, 'Buildings', 1, ST_Transform(NEW.geometry, 3857));
   RETURN NEW;
 END;
 $INSERT_BLDG_feature$
