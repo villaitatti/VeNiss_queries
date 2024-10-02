@@ -46,6 +46,19 @@ def _get_credentials():
         print('Error. Have you created the config.ini file? see readme.md')
         print(ex)
 
+def _get_type_string_from_type(table_name):
+    if table_name is list_types[0]:
+        return 'Building'
+    elif table_name is list_types[1]:
+        return 'Island'
+    else:
+        return 'Open Space'
+
+def _get_level_from_type(table_name):
+    if table_name is list_types[0] or table_name is list_types[2]:
+        return 1
+    else:
+        return 2
 
 def _get_crs_from_table(cursor, table_name):
     if _check_if_table_exists(cursor, table_name):
@@ -113,7 +126,7 @@ def _connect_to_database(credentials):
 
 def _1_update_veniss_data(cursor, t_name):
     for t in list_types:
-        table = f'{t_name}_{t}'
+        table = f'{t_name}_{t}'        
         # check if table exists
         if _check_if_table_exists(cursor, table):
             query_update = f"""
@@ -121,9 +134,10 @@ def _1_update_veniss_data(cursor, t_name):
               (
                 SELECT
                   identifier,
-                  'Building' AS "t",
-                  1 AS "z",
-                  ST_Transform(geometry, 3857) AS "geometry"
+                  '{_get_type_string_from_type(t)}' AS "t",
+                  {_get_level_from_type(t)} AS "z",
+                  ST_Transform(geometry, 3857) AS "geometry",
+                  name
                 FROM PUBLIC.{table}
                 WHERE NOT EXISTS (SELECT 1 FROM PRODUCTION.veniss_data WHERE PUBLIC.{table}.identifier = PRODUCTION.veniss_data.identifier)
               );"""

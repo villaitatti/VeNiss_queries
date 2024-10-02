@@ -7,7 +7,8 @@ CREATE SCHEMA IF NOT EXISTS PRODUCTION;
 CREATE TABLE PRODUCTION.veniss_data(
   identifier varchar(100) NOT NULL PRIMARY KEY,
   t varchar(255),
-  z integer
+  z integer,
+  name varchar(255),
 );
 
 SELECT AddGeometryColumn('production', 'veniss_data', 'geometry', 3857, 'MULTIPOLYGON', 2);
@@ -18,8 +19,8 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_BLDG_feature()
   RETURNS TRIGGER
   AS $INSERT_BLDG_feature$
 BEGIN
-  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Buildings', 1, ST_Transform(NEW.geometry, 3857));
+  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry, name)
+    VALUES(NEW.identifier, 'Buildings', 1, ST_Transform(NEW.geometry, 3857), NEW.name);
   RETURN NEW;
 END;
 $INSERT_BLDG_feature$
@@ -30,8 +31,8 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_IS_feature()
   RETURNS TRIGGER
   AS $INSERT_IS_feature$
 BEGIN
-  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Island', 0, ST_Transform(NEW.geometry, 3857));
+  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry, name)
+    VALUES(NEW.identifier, 'Island', 0, ST_Transform(NEW.geometry, 3857), NEW.name);
   RETURN NEW;
 END;
 $INSERT_IS_feature$
@@ -42,8 +43,8 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_OS_feature()
   RETURNS TRIGGER
   AS $INSERT_OS_feature$
 BEGIN
-  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Open Space', 1, ST_Transform(NEW.geometry, 3857));
+  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry, name)
+    VALUES(NEW.identifier, 'Open Space', 1, ST_Transform(NEW.geometry, 3857), NEW.name);
   RETURN NEW;
 END;
 $INSERT_OS_feature$
@@ -53,8 +54,8 @@ CREATE OR REPLACE FUNCTION PRODUCTION.INSERT_WV_feature()
   RETURNS TRIGGER
   AS $INSERT_WV_feature$
 BEGIN
-  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry)
-    VALUES(NEW.identifier, 'Water way', -1, ST_Transform(NEW.geometry, 3857));
+  INSERT INTO PRODUCTION.veniss_data(identifier, t, z, geometry, name)
+    VALUES(NEW.identifier, 'Water way', -1, ST_Transform(NEW.geometry, 3857), NEW.name);
   RETURN NEW;
 END;
 $INSERT_WV_feature$
