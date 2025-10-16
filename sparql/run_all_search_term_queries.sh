@@ -44,15 +44,16 @@ SPARQL_ENDPOINT="${SPARQL_ENDPOINT:-$DEFAULT_SPARQL_ENDPOINT}"
 
 log_message "========================================="
 log_message "Starting batch execution of search_term.rq queries"
+log_message "Processing: primary_source and secondary_source only"
 log_message "Endpoint: $SPARQL_ENDPOINT"
 log_message "Base directory: $BASE_DIR"
 log_message "========================================="
 
-# Find all search_term.rq files
+# Find only primary_source and secondary_source search_term.rq files
 query_files=()
 while IFS= read -r -d '' file; do
     query_files+=("$file")
-done < <(find "$BASE_DIR" -name "search_term.rq" -type f -print0)
+done < <(find "$BASE_DIR/primary_source" "$BASE_DIR/secondary_source" -name "search_term.rq" -type f -print0 2>/dev/null)
 
 if [ ${#query_files[@]} -eq 0 ]; then
     log_message "WARNING: No search_term.rq files found in $BASE_DIR"
