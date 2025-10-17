@@ -12,7 +12,7 @@ DELETE {
       rdfs:label ?label .
 }
 WHERE {
-  ?item a veniss_ontology:Source_Primary .
+  ?item a veniss_ontology:Group .
   ?item crm:P1_is_identified_by ?st .
   ?st a crm:E41_Appellation ;
       crm:P2_has_type veniss_types:search_term ;
