@@ -5,10 +5,6 @@ PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX veniss_ontology: <https://veniss.net/ontology#>
 PREFIX veniss_types: <https://veniss.net/resource/type/>
 
-DELETE {
-  ?item crm:P1_is_identified_by ?existingSt .
-  ?existingSt ?p ?o .
-}
 INSERT {
   ?item crm:P1_is_identified_by ?st .
   ?st a crm:E41_Appellation ;
@@ -16,13 +12,17 @@ INSERT {
       rdfs:label ?label .
 }
 WHERE {
-  ?item rdf:type veniss_ontology:Group .
-
-  OPTIONAL {
-    ?item crm:P1_is_identified_by ?existingSt .
-    ?existingSt a crm:E41_Appellation ;
-                crm:P2_has_type veniss_types:search_term .
-    ?existingSt ?p ?o .
+  # --- only Groups that DON'T already have a search_term ---
+  {
+    SELECT ?item WHERE {
+      ?item rdf:type veniss_ontology:Group .
+      FILTER NOT EXISTS {
+        ?item crm:P1_is_identified_by ?existingSt .
+        ?existingSt a crm:E41_Appellation ;
+                    crm:P2_has_type veniss_types:search_term .
+      }
+    }
+    # LIMIT 100
   }
 
   # ---- Name concatenation query ----
@@ -32,36 +32,34 @@ WHERE {
       ?item a veniss_ontology:Group .
       
       OPTIONAL {
-        ?item crm:P1_is_identified_by ?given_name_node.
-        ?given_name_node crm:P2_has_type <https://veniss.net/resource/type/given_name>;
-          rdfs:label ?given_name_label.
+        ?item crm:P1_is_identified_by ?given_name_node .
+        ?given_name_node crm:P2_has_type <https://veniss.net/resource/type/given_name> ;
+                         rdfs:label ?given_name_label .
         BIND(?given_name_label AS ?given_name)
       }
       OPTIONAL {
-        ?item crm:P1_is_identified_by ?family_name_node.
-        ?family_name_node crm:P2_has_type <https://veniss.net/resource/type/family_name>;
-          rdfs:label ?family_name_label.
+        ?item crm:P1_is_identified_by ?family_name_node .
+        ?family_name_node crm:P2_has_type <https://veniss.net/resource/type/family_name> ;
+                          rdfs:label ?family_name_label .
         BIND(?family_name_label AS ?family_name)
       }
       OPTIONAL {
-        ?item crm:P1_is_identified_by ?alias_node.
-        ?alias_node crm:P2_has_type <https://veniss.net/resource/type/alias>;
-          rdfs:label ?alias_label.
+        ?item crm:P1_is_identified_by ?alias_node .
+        ?alias_node crm:P2_has_type <https://veniss.net/resource/type/alias> ;
+                    rdfs:label ?alias_label .
+      }
+      OPTIONAL {
+        ?item crm:P1_is_identified_by ?appellation .
+        ?appellation crm:P2_has_type <https://veniss.net/resource/type/appellation> ;
+                     rdfs:label ?group_label .
       }
 
-      OPTIONAL {
-        ?item crm:P1_is_identified_by ?appellation.
-        ?appellation crm:P2_has_type <https://veniss.net/resource/type/appellation>;
-          rdfs:label ?group_label
-      }
-      
       BIND(COALESCE(?given_name, "") AS ?given_name_final)
       BIND(COALESCE(CONCAT(?family_name, ", "), "") AS ?family_name_final)
-      BIND(CONCAT(?family_name_final, ?given_name_final) as ?fullname_final)
+      BIND(CONCAT(?family_name_final, ?given_name_final) AS ?fullname_final)
       BIND(COALESCE(CONCAT(?alias_label, " (", ?fullname_final, ")"), ?fullname_final) AS ?person_name)
-      BIND(COALESCE(?group_label, "") as ?group_name)
-      
-      BIND(CONCAT(?group_name, ?person_name) as ?value)
+      BIND(COALESCE(?group_label, "") AS ?group_name)
+      BIND(CONCAT(?group_name, ?person_name) AS ?value)
     }
     GROUP BY ?item
   }
@@ -70,13 +68,13 @@ WHERE {
   OPTIONAL {
     SELECT ?item (SAMPLE(STR(?formation_year_label)) AS ?formation_year)
     WHERE {
-      ?item crm:P95i_was_formed_by ?formation.
-      ?formation a crm:E66_Formation;
-          crm:P4_has_time-span ?timespan.
-      ?timespan crm:P170i_time_is_defined_by ?time_primitive.
-      ?time_primitive a crm:E61_Time-Primitive;
-          crm:P2_has_type <https://veniss.net/resource/type/time_primitive_year>;
-          rdfs:label ?formation_year_label.
+      ?item crm:P95i_was_formed_by ?formation .
+      ?formation a crm:E66_Formation ;
+                 crm:P4_has_time-span ?timespan .
+      ?timespan crm:P170i_time_is_defined_by ?time_primitive .
+      ?time_primitive a crm:E61_Time-Primitive ;
+                      crm:P2_has_type <https://veniss.net/resource/type/time_primitive_year> ;
+                      rdfs:label ?formation_year_label .
     }
     GROUP BY ?item
   }
@@ -85,13 +83,13 @@ WHERE {
   OPTIONAL {
     SELECT ?item (SAMPLE(STR(?dissolution_year_label)) AS ?dissolution_year)
     WHERE {
-      ?item crm:P99i_dissolved_by ?dissolution.
-      ?dissolution a crm:E68_Dissolution;
-          crm:P4_has_time-span ?timespan.
-      ?timespan crm:P170i_time_is_defined_by ?time_primitive.
-      ?time_primitive a crm:E61_Time-Primitive;
-          crm:P2_has_type <https://veniss.net/resource/type/time_primitive_year>;
-          rdfs:label ?dissolution_year_label.
+      ?item crm:P99i_dissolved_by ?dissolution .
+      ?dissolution a crm:E68_Dissolution ;
+                   crm:P4_has_time-span ?timespan .
+      ?timespan crm:P170i_time_is_defined_by ?time_primitive .
+      ?time_primitive a crm:E61_Time-Primitive ;
+                      crm:P2_has_type <https://veniss.net/resource/type/time_primitive_year> ;
+                      rdfs:label ?dissolution_year_label .
     }
     GROUP BY ?item
   }
