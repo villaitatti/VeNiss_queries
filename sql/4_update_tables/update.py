@@ -2,6 +2,7 @@ import click
 import psycopg
 import configparser
 import os
+import re
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -85,18 +86,57 @@ def _get_start_end(source_name):
     TODAY_START = 2000
     TODAY_END = 40000
     try:
-        if source_name == 'today':
+        # Handle "today" case
+        if source_name.lower() == 'today':
             return (TODAY_START, TODAY_END)
-        elif ':' in source_name:
-            year = source_name.split(':')[0]
-            if '-' in year:
-                return (year.split('-'))
+        
+        # Handle cases with colon (e.g., "1818: name", "1943-45: RAF")
+        if ':' in source_name:
+            year_part = source_name.split(':')[0].strip()
+            if '-' in year_part:
+                # Handle range like "1943-45"
+                years = year_part.split('-')
+                start_year = re.search(r'\d{4}', years[0])
+                end_year = re.search(r'\d{4}', years[1]) if len(years) > 1 else None
+                
+                if start_year:
+                    start = int(start_year.group())
+                    if end_year:
+                        end = int(end_year.group())
+                    else:
+                        # Handle cases like "1943-45" where end year is abbreviated
+                        end_digits = re.search(r'\d+', years[1])
+                        if end_digits:
+                            end_str = end_digits.group()
+                            if len(end_str) == 2:  # Two-digit year like "45"
+                                # Assume same century as start year
+                                century = start // 100 * 100
+                                end = century + int(end_str)
+                            else:
+                                end = int(end_str)
+                        else:
+                            end = start
+                    return (start, end)
+            else:
+                # Single year with colon (e.g., "1818: name")
+                year_match = re.search(r'\d{4}', year_part)
+                if year_match:
+                    year = int(year_match.group())
+                    return (year, year)
+        
+        # Handle cases without colon - extract first 4-digit year found
+        year_match = re.search(r'\d{4}', source_name)
+        if year_match:
+            year = int(year_match.group())
             return (year, year)
-        else:
-            return (source_name, source_name)
+        
+        # If no 4-digit year found, return default values
+        print(f'Warning: Could not extract year from column name "{source_name}". Using default values.')
+        return (TODAY_START, TODAY_END)
+        
     except Exception as ex:
-        print('Error. Could not parse start and end year.')
-        print(ex)
+        print(f'Error parsing start and end year from "{source_name}": {ex}')
+        return (TODAY_START, TODAY_END)
 
 # Function to remove whitespaces and colon from string and lowercases it
 
