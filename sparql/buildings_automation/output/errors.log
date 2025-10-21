@@ -1,0 +1,16 @@
+Buildings with Errors
+Generated: 2025-10-21 15:18:34
+================================================================================
+
+SSC_BLDG_35 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_21 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_23 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_14 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_17 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_16 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_18 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_29 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_20 - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_38 - None - expected string or bytes-like object, got 'NoneType'
+00_remove - None - expected string or bytes-like object, got 'NoneType'
+SSC_BLDG_57 - None - expected string or bytes-like object, got 'NoneType'

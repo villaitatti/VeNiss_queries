@@ -1,0 +1,211 @@
+2025-10-21 15:18:33,287 - __main__ - INFO - Starting building automation script in DRY RUN MODE
+2025-10-21 15:18:33,287 - __main__ - INFO - Log file: ./output/buildings_automation_20251021_151833.log
+2025-10-21 15:18:33,287 - __main__ - INFO - Connecting to PostgreSQL database...
+2025-10-21 15:18:33,681 - database - INFO - Successfully connected to PostgreSQL database
+2025-10-21 15:18:33,681 - __main__ - INFO - Processing buildings for island: sansecondo
+2025-10-21 15:18:34,189 - database - INFO - Fetched 74 building records from qgis_sansecondo_buildings
+2025-10-21 15:18:34,340 - database - INFO - Fetched 60 source year mappings
+2025-10-21 15:18:34,340 - database - INFO - Grouped 74 phases into 58 buildings
+2025-10-21 15:18:34,340 - database - INFO - Processed 58 buildings with their phases
+2025-10-21 15:18:34,340 - __main__ - INFO - Found 58 buildings to process
+2025-10-21 15:18:34,340 - __main__ - INFO - Looking up island URI for 'sansecondo'...
+2025-10-21 15:18:34,340 - sparql - INFO - [DRY RUN] Would query for island URI with label 'sansecondo'
+2025-10-21 15:18:34,340 - __main__ - INFO - Processing building 1/58: SSC_BLDG_2
+2025-10-21 15:18:34,340 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_2' exists
+2025-10-21 15:18:34,340 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_2'...
+2025-10-21 15:18:34,340 - __main__ - INFO - Processing building 2/58: SSC_BLDG_1
+2025-10-21 15:18:34,340 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_1' exists
+2025-10-21 15:18:34,340 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_1'...
+2025-10-21 15:18:34,340 - __main__ - INFO - Processing building 3/58: SSC_BLDG_9
+2025-10-21 15:18:34,340 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_9' exists
+2025-10-21 15:18:34,340 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_9'...
+2025-10-21 15:18:34,340 - __main__ - INFO - Processing building 4/58: SSC_BLDG_11
+2025-10-21 15:18:34,340 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_11' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_11'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 5/58: SSC_BLDG_10
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_10' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_10'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 6/58: SSC_BLDG_5
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_5' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_5'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 7/58: SSC_BLDG_3
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_3' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_3'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 8/58: SSC_BLDG_35
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_35' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_35'...
+2025-10-21 15:18:34,341 - __main__ - ERROR - Error processing building 'SSC_BLDG_35': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 9/58: SSC_BLDG_37
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_37' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_37'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 10/58: SSC_BLDG_50
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_50' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_50'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 11/58: SSC_BLDG_31
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_31' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_31'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 12/58: SSC_BLDG_32
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_32' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_32'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 13/58: SSC_BLDG_30
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_30' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_30'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 14/58: SSC_BLDG_34
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_34' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_34'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 15/58: SSC_BLDG_33
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_33' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_33'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 16/58: SSC_BLDG_22
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_22' exists
+2025-10-21 15:18:34,341 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_22'...
+2025-10-21 15:18:34,341 - __main__ - INFO - Processing building 17/58: SSC_BLDG_21
+2025-10-21 15:18:34,341 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_21' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_21'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_21': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 18/58: SSC_BLDG_24
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_24' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_24'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 19/58: SSC_BLDG_23
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_23' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_23'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_23': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 20/58: SSC_BLDG_26
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_26' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_26'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 21/58: SSC_BLDG_15
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_15' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_15'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 22/58: SSC_BLDG_14
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_14' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_14'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_14': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 23/58: SSC_BLDG_17
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_17' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_17'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_17': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 24/58: SSC_BLDG_16
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_16' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_16'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_16': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 25/58: SSC_BLDG_19
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_19' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_19'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 26/58: SSC_BLDG_18
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_18' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_18'...
+2025-10-21 15:18:34,342 - __main__ - ERROR - Error processing building 'SSC_BLDG_18': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 27/58: SSC_BLDG_54
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_54' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_54'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 28/58: SSC_BLDG_6
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_6' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_6'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 29/58: SSC_BLDG_4
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_4' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_4'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 30/58: SSC_BLDG_36
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_36' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_36'...
+2025-10-21 15:18:34,342 - __main__ - INFO - Processing building 31/58: SSC_BLDG_29
+2025-10-21 15:18:34,342 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_29' exists
+2025-10-21 15:18:34,342 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_29'...
+2025-10-21 15:18:34,343 - __main__ - ERROR - Error processing building 'SSC_BLDG_29': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 32/58: SSC_BLDG_27
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_27' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_27'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 33/58: SSC_BLDG_46
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_46' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_46'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 34/58: SSC_BLDG_45
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_45' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_45'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 35/58: SSC_BLDG_48
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_48' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_48'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 36/58: SSC_BLDG_56
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_56' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_56'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 37/58: SSC_BLDG_28
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_28' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_28'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 38/58: SSC_BLDG_20
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_20' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_20'...
+2025-10-21 15:18:34,343 - __main__ - ERROR - Error processing building 'SSC_BLDG_20': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 39/58: SSC_BLDG_25
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_25' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_25'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 40/58: SSC_BLDG_51
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_51' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_51'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 41/58: SSC_BLDG_39
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_39' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_39'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 42/58: SSC_BLDG_41
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_41' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_41'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 43/58: SSC_BLDG_42
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_42' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_42'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 44/58: SSC_BLDG_8
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_8' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_8'...
+2025-10-21 15:18:34,343 - __main__ - INFO - Processing building 45/58: SSC_BLDG_47
+2025-10-21 15:18:34,343 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_47' exists
+2025-10-21 15:18:34,343 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_47'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 46/58: SSC_BLDG_44
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_44' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_44'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 47/58: SSC_BLDG_43
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_43' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_43'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 48/58: SSC_BLDG_38
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_38' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_38'...
+2025-10-21 15:18:34,344 - __main__ - ERROR - Error processing building 'SSC_BLDG_38': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 49/58: SSC_BLDG_13
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_13' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_13'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 50/58: SSC_BLDG_12
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_12' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_12'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 51/58: SSC_BLDG_55
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_55' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_55'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 52/58: SSC_BLDG_52
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_52' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_52'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 53/58: SSC_BLDG_40
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_40' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_40'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 54/58: 00_remove
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building '00_remove' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for '00_remove'...
+2025-10-21 15:18:34,344 - __main__ - ERROR - Error processing building '00_remove': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 55/58: SSC_BLDG_57
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_57' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_57'...
+2025-10-21 15:18:34,344 - __main__ - ERROR - Error processing building 'SSC_BLDG_57': expected string or bytes-like object, got 'NoneType'
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 56/58: SSC_BLDG_7
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_7' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_7'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 57/58: SSC_BLDG_53
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_53' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_53'...
+2025-10-21 15:18:34,344 - __main__ - INFO - Processing building 58/58: SSC_BLDG_49
+2025-10-21 15:18:34,344 - sparql - INFO - [DRY RUN] Would check if building 'SSC_BLDG_49' exists
+2025-10-21 15:18:34,344 - __main__ - INFO - Generating SPARQL query for 'SSC_BLDG_49'...
+2025-10-21 15:18:34,345 - __main__ - INFO - Database connection closed
+2025-10-21 15:18:34,345 - __main__ - INFO - Writing results to output files...
+2025-10-21 15:18:34,345 - __main__ - INFO - Dry run preview written to: ./output/dry_run_preview.txt
+2025-10-21 15:18:34,345 - __main__ - INFO - DRY RUN: Would have inserted 46 buildings
+2025-10-21 15:18:34,345 - __main__ - ERROR - Encountered errors with 12 buildings
+2025-10-21 15:18:34,345 - __main__ - INFO - ================================================================================
+2025-10-21 15:18:34,345 - __main__ - INFO - SUMMARY
+2025-10-21 15:18:34,345 - __main__ - INFO - ================================================================================
+2025-10-21 15:18:34,345 - __main__ - INFO - Buildings to insert: 46
+2025-10-21 15:18:34,345 - __main__ - INFO - Buildings skipped: 0
+2025-10-21 15:18:34,345 - __main__ - INFO - Buildings with errors: 12
+2025-10-21 15:18:34,345 - __main__ - INFO - ================================================================================
+2025-10-21 15:18:34,345 - __main__ - INFO - Script completed successfully
