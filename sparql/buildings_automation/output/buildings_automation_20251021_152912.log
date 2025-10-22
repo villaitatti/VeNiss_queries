@@ -1,0 +1,125 @@
+2025-10-21 15:29:12,207 - __main__ - INFO - Starting building automation script in LIVE MODE
+2025-10-21 15:29:12,208 - __main__ - INFO - Log file: ./output/buildings_automation_20251021_152912.log
+2025-10-21 15:29:12,208 - __main__ - INFO - Connecting to PostgreSQL database...
+2025-10-21 15:29:12,635 - database - INFO - Successfully connected to PostgreSQL database
+2025-10-21 15:29:12,636 - __main__ - INFO - Processing buildings for island: santospirito
+2025-10-21 15:29:13,039 - database - INFO - Fetched 19 building records from qgis_santospirito_buildings
+2025-10-21 15:29:13,116 - database - INFO - Fetched 60 source year mappings
+2025-10-21 15:29:13,117 - database - INFO - Grouped 19 phases into 17 buildings
+2025-10-21 15:29:13,117 - database - INFO - Processed 17 buildings with their phases
+2025-10-21 15:29:13,117 - __main__ - INFO - Found 17 buildings to process
+2025-10-21 15:29:13,117 - __main__ - INFO - Looking up island URI for 'santospirito'...
+2025-10-21 15:29:13,623 - sparql - INFO - Found island URI for 'santospirito': https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae
+2025-10-21 15:29:13,624 - __main__ - INFO - Processing building 1/17: SSP_BLDG_2
+2025-10-21 15:29:14,023 - sparql - INFO - Building 'SSP_BLDG_2' does not exist
+2025-10-21 15:29:14,026 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_2'...
+2025-10-21 15:29:14,026 - __main__ - INFO - Inserting building 'SSP_BLDG_2' into triplestore...
+2025-10-21 15:29:14,352 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:14,354 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_2'
+2025-10-21 15:29:14,354 - __main__ - INFO - Processing building 2/17: SSP_BLDG_6
+2025-10-21 15:29:14,873 - sparql - INFO - Building 'SSP_BLDG_6' does not exist
+2025-10-21 15:29:14,874 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_6'...
+2025-10-21 15:29:14,875 - __main__ - INFO - Inserting building 'SSP_BLDG_6' into triplestore...
+2025-10-21 15:29:15,267 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:15,270 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_6'
+2025-10-21 15:29:15,270 - __main__ - INFO - Processing building 3/17: SSP_BLDG_1
+2025-10-21 15:29:15,791 - sparql - INFO - Building 'SSP_BLDG_1' does not exist
+2025-10-21 15:29:15,795 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_1'...
+2025-10-21 15:29:15,795 - __main__ - INFO - Inserting building 'SSP_BLDG_1' into triplestore...
+2025-10-21 15:29:16,245 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:16,248 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_1'
+2025-10-21 15:29:16,248 - __main__ - INFO - Processing building 4/17: SSP_BLDG_14
+2025-10-21 15:29:16,774 - sparql - INFO - Building 'SSP_BLDG_14' does not exist
+2025-10-21 15:29:16,778 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_14'...
+2025-10-21 15:29:16,778 - __main__ - INFO - Inserting building 'SSP_BLDG_14' into triplestore...
+2025-10-21 15:29:17,169 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:17,173 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_14'
+2025-10-21 15:29:17,173 - __main__ - INFO - Processing building 5/17: SSP_BLDG_9
+2025-10-21 15:29:17,695 - sparql - INFO - Building 'SSP_BLDG_9' does not exist
+2025-10-21 15:29:17,698 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_9'...
+2025-10-21 15:29:17,699 - __main__ - INFO - Inserting building 'SSP_BLDG_9' into triplestore...
+2025-10-21 15:29:18,021 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:18,022 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_9'
+2025-10-21 15:29:18,022 - __main__ - INFO - Processing building 6/17: SSP_BLDG_3
+2025-10-21 15:29:18,452 - sparql - INFO - Building 'SSP_BLDG_3' does not exist
+2025-10-21 15:29:18,454 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_3'...
+2025-10-21 15:29:18,455 - __main__ - INFO - Inserting building 'SSP_BLDG_3' into triplestore...
+2025-10-21 15:29:18,850 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:18,851 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_3'
+2025-10-21 15:29:18,851 - __main__ - INFO - Processing building 7/17: SSP_BLDG_11
+2025-10-21 15:29:19,265 - sparql - INFO - Building 'SSP_BLDG_11' does not exist
+2025-10-21 15:29:19,267 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_11'...
+2025-10-21 15:29:19,267 - __main__ - INFO - Inserting building 'SSP_BLDG_11' into triplestore...
+2025-10-21 15:29:19,591 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:19,592 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_11'
+2025-10-21 15:29:19,592 - __main__ - INFO - Processing building 8/17: SSP_BLDG_10
+2025-10-21 15:29:20,116 - sparql - INFO - Building 'SSP_BLDG_10' does not exist
+2025-10-21 15:29:20,117 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_10'...
+2025-10-21 15:29:20,117 - __main__ - INFO - Inserting building 'SSP_BLDG_10' into triplestore...
+2025-10-21 15:29:20,479 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:20,480 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_10'
+2025-10-21 15:29:20,481 - __main__ - INFO - Processing building 9/17: SSP_BLDG_8
+2025-10-21 15:29:21,027 - sparql - INFO - Building 'SSP_BLDG_8' does not exist
+2025-10-21 15:29:21,028 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_8'...
+2025-10-21 15:29:21,028 - __main__ - INFO - Inserting building 'SSP_BLDG_8' into triplestore...
+2025-10-21 15:29:21,495 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:21,499 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_8'
+2025-10-21 15:29:21,499 - __main__ - INFO - Processing building 10/17: SSP_BLDG_15
+2025-10-21 15:29:22,069 - sparql - INFO - Building 'SSP_BLDG_15' does not exist
+2025-10-21 15:29:22,072 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_15'...
+2025-10-21 15:29:22,072 - __main__ - INFO - Inserting building 'SSP_BLDG_15' into triplestore...
+2025-10-21 15:29:22,539 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:22,543 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_15'
+2025-10-21 15:29:22,544 - __main__ - INFO - Processing building 11/17: SSP_BLDG_13
+2025-10-21 15:29:23,071 - sparql - INFO - Building 'SSP_BLDG_13' does not exist
+2025-10-21 15:29:23,073 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_13'...
+2025-10-21 15:29:23,073 - __main__ - INFO - Inserting building 'SSP_BLDG_13' into triplestore...
+2025-10-21 15:29:23,461 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:23,464 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_13'
+2025-10-21 15:29:23,464 - __main__ - INFO - Processing building 12/17: SSP_BLDG_12
+2025-10-21 15:29:23,984 - sparql - INFO - Building 'SSP_BLDG_12' does not exist
+2025-10-21 15:29:23,985 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_12'...
+2025-10-21 15:29:23,985 - __main__ - INFO - Inserting building 'SSP_BLDG_12' into triplestore...
+2025-10-21 15:29:24,313 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:24,316 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_12'
+2025-10-21 15:29:24,316 - __main__ - INFO - Processing building 13/17: SSP_BLDG_7
+2025-10-21 15:29:24,849 - sparql - INFO - Building 'SSP_BLDG_7' does not exist
+2025-10-21 15:29:24,851 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_7'...
+2025-10-21 15:29:24,852 - __main__ - INFO - Inserting building 'SSP_BLDG_7' into triplestore...
+2025-10-21 15:29:25,221 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:25,225 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_7'
+2025-10-21 15:29:25,225 - __main__ - INFO - Processing building 14/17: SSP_BLDG_4
+2025-10-21 15:29:25,705 - sparql - INFO - Building 'SSP_BLDG_4' does not exist
+2025-10-21 15:29:25,708 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_4'...
+2025-10-21 15:29:25,708 - __main__ - INFO - Inserting building 'SSP_BLDG_4' into triplestore...
+2025-10-21 15:29:26,082 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:26,084 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_4'
+2025-10-21 15:29:26,084 - __main__ - INFO - Processing building 15/17: SSP_BLDG_5
+2025-10-21 15:29:26,610 - sparql - INFO - Building 'SSP_BLDG_5' does not exist
+2025-10-21 15:29:26,612 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_5'...
+2025-10-21 15:29:26,612 - __main__ - INFO - Inserting building 'SSP_BLDG_5' into triplestore...
+2025-10-21 15:29:26,947 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:26,948 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_5'
+2025-10-21 15:29:26,948 - __main__ - INFO - Processing building 16/17: SSP_BUILDINGS_11
+2025-10-21 15:29:27,462 - sparql - INFO - Building 'SSP_BUILDINGS_11' does not exist
+2025-10-21 15:29:27,464 - __main__ - INFO - Generating SPARQL query for 'SSP_BUILDINGS_11'...
+2025-10-21 15:29:27,464 - __main__ - INFO - Inserting building 'SSP_BUILDINGS_11' into triplestore...
+2025-10-21 15:29:27,845 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:27,849 - __main__ - INFO - Successfully inserted building 'SSP_BUILDINGS_11'
+2025-10-21 15:29:27,850 - __main__ - INFO - Processing building 17/17: SSP_BLDG_16
+2025-10-21 15:29:28,371 - sparql - INFO - Building 'SSP_BLDG_16' does not exist
+2025-10-21 15:29:28,373 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_16'...
+2025-10-21 15:29:28,373 - __main__ - INFO - Inserting building 'SSP_BLDG_16' into triplestore...
+2025-10-21 15:29:28,876 - sparql - INFO - Successfully executed INSERT query
+2025-10-21 15:29:28,881 - __main__ - INFO - Successfully inserted building 'SSP_BLDG_16'
+2025-10-21 15:29:28,881 - __main__ - INFO - Database connection closed
+2025-10-21 15:29:28,881 - __main__ - INFO - Writing results to output files...
+2025-10-21 15:29:28,882 - __main__ - INFO - Inserted 17 buildings
+2025-10-21 15:29:28,882 - __main__ - INFO - ================================================================================
+2025-10-21 15:29:28,882 - __main__ - INFO - SUMMARY
+2025-10-21 15:29:28,882 - __main__ - INFO - ================================================================================
+2025-10-21 15:29:28,882 - __main__ - INFO - Buildings inserted: 17
+2025-10-21 15:29:28,882 - __main__ - INFO - Buildings skipped: 0
+2025-10-21 15:29:28,882 - __main__ - INFO - Buildings with errors: 0
+2025-10-21 15:29:28,882 - __main__ - INFO - ================================================================================
+2025-10-21 15:29:28,883 - __main__ - INFO - Script completed successfully

@@ -1,0 +1,75 @@
+2025-10-21 15:39:16,833 - __main__ - INFO - Starting building automation script in DRY RUN MODE
+2025-10-21 15:39:16,833 - __main__ - INFO - Log file: ./output/buildings_automation_20251021_153916.log
+2025-10-21 15:39:16,833 - __main__ - INFO - Connecting to PostgreSQL database...
+2025-10-21 15:39:17,077 - database - INFO - Successfully connected to PostgreSQL database
+2025-10-21 15:39:17,077 - __main__ - INFO - Processing buildings for island: santospirito
+2025-10-21 15:39:17,299 - database - INFO - Fetched 19 building records from qgis_santospirito_buildings
+2025-10-21 15:39:17,424 - database - INFO - Fetched 60 source year mappings
+2025-10-21 15:39:17,424 - database - INFO - Grouped 19 phases into 17 buildings
+2025-10-21 15:39:17,424 - database - INFO - Processed 17 buildings with their phases
+2025-10-21 15:39:17,424 - __main__ - INFO - Found 17 buildings to process
+2025-10-21 15:39:17,424 - __main__ - INFO - Looking up island URI for 'santospirito'...
+2025-10-21 15:39:17,754 - sparql - INFO - Found island URI for 'santospirito': https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae
+2025-10-21 15:39:17,755 - __main__ - INFO - Processing building 1/17: SSP_BLDG_2
+2025-10-21 15:39:17,755 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_2' exists
+2025-10-21 15:39:17,755 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_2'...
+2025-10-21 15:39:17,755 - __main__ - INFO - Processing building 2/17: SSP_BLDG_6
+2025-10-21 15:39:17,755 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_6' exists
+2025-10-21 15:39:17,755 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_6'...
+2025-10-21 15:39:17,755 - __main__ - INFO - Processing building 3/17: SSP_BLDG_1
+2025-10-21 15:39:17,755 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_1' exists
+2025-10-21 15:39:17,755 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_1'...
+2025-10-21 15:39:17,755 - __main__ - INFO - Processing building 4/17: SSP_BLDG_14
+2025-10-21 15:39:17,755 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_14' exists
+2025-10-21 15:39:17,755 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_14'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 5/17: SSP_BLDG_9
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_9' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_9'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 6/17: SSP_BLDG_3
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_3' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_3'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 7/17: SSP_BLDG_11
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_11' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_11'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 8/17: SSP_BLDG_10
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_10' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_10'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 9/17: SSP_BLDG_8
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_8' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_8'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 10/17: SSP_BLDG_15
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_15' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_15'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 11/17: SSP_BLDG_13
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_13' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_13'...
+2025-10-21 15:39:17,756 - __main__ - INFO - Processing building 12/17: SSP_BLDG_12
+2025-10-21 15:39:17,756 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_12' exists
+2025-10-21 15:39:17,756 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_12'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Processing building 13/17: SSP_BLDG_7
+2025-10-21 15:39:17,757 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_7' exists
+2025-10-21 15:39:17,757 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_7'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Processing building 14/17: SSP_BLDG_4
+2025-10-21 15:39:17,757 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_4' exists
+2025-10-21 15:39:17,757 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_4'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Processing building 15/17: SSP_BLDG_5
+2025-10-21 15:39:17,757 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_5' exists
+2025-10-21 15:39:17,757 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_5'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Processing building 16/17: SSP_BUILDINGS_11
+2025-10-21 15:39:17,757 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BUILDINGS_11' exists
+2025-10-21 15:39:17,757 - __main__ - INFO - Generating SPARQL query for 'SSP_BUILDINGS_11'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Processing building 17/17: SSP_BLDG_16
+2025-10-21 15:39:17,757 - sparql - INFO - [DRY RUN] Would check if building 'SSP_BLDG_16' exists
+2025-10-21 15:39:17,757 - __main__ - INFO - Generating SPARQL query for 'SSP_BLDG_16'...
+2025-10-21 15:39:17,757 - __main__ - INFO - Database connection closed
+2025-10-21 15:39:17,758 - __main__ - INFO - Writing results to output files...
+2025-10-21 15:39:17,759 - __main__ - INFO - Dry run preview written to: ./output/dry_run_preview.txt
+2025-10-21 15:39:17,759 - __main__ - INFO - DRY RUN: Would have inserted 17 buildings
+2025-10-21 15:39:17,759 - __main__ - INFO - ================================================================================
+2025-10-21 15:39:17,759 - __main__ - INFO - SUMMARY
+2025-10-21 15:39:17,759 - __main__ - INFO - ================================================================================
+2025-10-21 15:39:17,759 - __main__ - INFO - Buildings to insert: 17
+2025-10-21 15:39:17,759 - __main__ - INFO - Buildings skipped: 0
+2025-10-21 15:39:17,759 - __main__ - INFO - Buildings with errors: 0
+2025-10-21 15:39:17,759 - __main__ - INFO - ================================================================================
+2025-10-21 15:39:17,759 - __main__ - INFO - Script completed successfully
