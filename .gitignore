@@ -1,8 +1,3 @@
 veniss_queries/
 
-# Environment files with credentials
 .env
-sparql/buildings_automation/.env
-
-# Output files from automation scripts
-sparql/buildings_automation/output/
