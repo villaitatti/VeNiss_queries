@@ -1,5 +1,5 @@
 #!/bin/bash
-set -Eeuo pipefail
+set -Eeu
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Resolve BASE_DIR to the directory this script lives in
@@ -44,16 +44,16 @@ SPARQL_ENDPOINT="${SPARQL_ENDPOINT:-$DEFAULT_SPARQL_ENDPOINT}"
 
 log_message "========================================="
 log_message "Starting batch execution of search_term.rq queries"
-log_message "Processing: primary_source and secondary_source only"
+log_message "Processing: event, group, person, primary_source, and secondary_source"
 log_message "Endpoint: $SPARQL_ENDPOINT"
 log_message "Base directory: $BASE_DIR"
 log_message "========================================="
 
-# Find only primary_source and secondary_source search_term.rq files
+# Find search_term.rq files in specified directories
 query_files=()
 while IFS= read -r -d '' file; do
     query_files+=("$file")
-done < <(find "$BASE_DIR/primary_source" "$BASE_DIR/secondary_source" -name "search_term.rq" -type f -print0 2>/dev/null)
+done < <(find "$BASE_DIR/event" "$BASE_DIR/group" "$BASE_DIR/person" "$BASE_DIR/primary_source" "$BASE_DIR/secondary_source" -name "search_term.rq" -type f -print0 2>/dev/null)
 
 if [ ${#query_files[@]} -eq 0 ]; then
     log_message "WARNING: No search_term.rq files found in $BASE_DIR"
@@ -101,12 +101,14 @@ for query_file in "${query_files[@]}"; do
     
     if [ "$http_code" -eq 200 ] || [ "$http_code" -eq 204 ]; then
         log_message "SUCCESS: $relative_path - HTTP $http_code"
-        [ -n "$response_body" ] && log_message "Response: $response_body"
-        ((success_count++))
+        if [ -n "$response_body" ]; then
+            log_message "Response: $response_body"
+        fi
+        success_count=$((success_count + 1))
     else
         log_message "ERROR: $relative_path - HTTP $http_code"
         log_message "Response: $response_body"
-        ((error_count++))
+        error_count=$((error_count + 1))
     fi
 done
 
