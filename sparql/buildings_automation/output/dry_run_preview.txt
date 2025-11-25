@@ -1,12 +1,12 @@
 DRY RUN PREVIEW - SPARQL Queries
-Generated: 2025-10-21 15:39:17
+Generated: 2025-11-11 14:41:12
 ================================================================================
 
 
 ================================================================================
-Building 1/17: SSP_BLDG_2
-Name: Ex convento 2
-Number of phases: 1
+Building 1/51: SSP_BLDG_11
+Name: External walls 11.4
+Number of phases: 5
 ================================================================================
 
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -18,41 +18,97 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/5e4d9ef9-cc48-4536-838a-4baa5d502833> a veniss:Building ;
-      rdfs:label "Ex convento" ;
+    <https://veniss.net/builtwork/a7074d28-91e8-4ebe-88dd-8a1c254ec576> a veniss:Building ;
+      rdfs:label "External walls" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/bd840856-891f-4b5d-afe5-b62b3d5d00df> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/0831103b-8d9e-4ea2-9236-a7a5dfd2fa82> .
 
     # Identifier
-    <https://veniss.net/builtwork/5e4d9ef9-cc48-4536-838a-4baa5d502833/identifier/b62680c0-4c09-4456-98d8-df6dfa6583fe> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_2" .
+    <https://veniss.net/builtwork/a7074d28-91e8-4ebe-88dd-8a1c254ec576/identifier/21a3cd7c-8647-4ec1-96bb-a541035cc836> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_11" .
 
-    <https://veniss.net/builtwork/5e4d9ef9-cc48-4536-838a-4baa5d502833> crm:P1_is_identified_by <https://veniss.net/builtwork/5e4d9ef9-cc48-4536-838a-4baa5d502833/identifier/b62680c0-4c09-4456-98d8-df6dfa6583fe> .
+    <https://veniss.net/builtwork/a7074d28-91e8-4ebe-88dd-8a1c254ec576> crm:P1_is_identified_by <https://veniss.net/builtwork/a7074d28-91e8-4ebe-88dd-8a1c254ec576/identifier/21a3cd7c-8647-4ec1-96bb-a541035cc836> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/bd840856-891f-4b5d-afe5-b62b3d5d00df> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/0831103b-8d9e-4ea2-9236-a7a5dfd2fa82> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/84e6c18e-fee0-45e7-80ba-14f3ddb34614> .
+        <https://veniss.net/presence/9c624719-1f83-41c0-9f33-ac9c03564c29>,
+        <https://veniss.net/presence/f5391709-eb3c-45ac-8bc9-d7fa0b37d023>,
+        <https://veniss.net/presence/afa6e99c-551d-46b8-bbd5-4cb083c74c76>,
+        <https://veniss.net/presence/4c92a258-fc7e-4d07-934f-85e6cec4186f>,
+        <https://veniss.net/presence/6f42702f-a410-4bfd-8b1a-e02024fe2392> .
 
-    # Phase: SSP_BLDG_2
-    <https://veniss.net/presence/84e6c18e-fee0-45e7-80ba-14f3ddb34614> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/dc1f34f2-7390-4644-a920-700f3b873855> ;
-      crm:P138i_has_representation <https://veniss.net/presence/84e6c18e-fee0-45e7-80ba-14f3ddb34614/2drepresentation/9130b967-5b15-448a-b935-0759a0f0aed6> .
+    # Phase: SSP_BLDG_11.4
+    <https://veniss.net/presence/9c624719-1f83-41c0-9f33-ac9c03564c29> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/3a5b7695-60aa-4cab-bf50-f8d64fa22822> ;
+      crm:P138i_has_representation <https://veniss.net/presence/9c624719-1f83-41c0-9f33-ac9c03564c29/2drepresentation/e99feca2-f728-4b74-8775-d41f53c29da3> .
 
-    <https://veniss.net/timespan/dc1f34f2-7390-4644-a920-700f3b873855> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+    <https://veniss.net/timespan/3a5b7695-60aa-4cab-bf50-f8d64fa22822> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1840-12-31"^^xsd:date
       .
 
-    <https://veniss.net/presence/84e6c18e-fee0-45e7-80ba-14f3ddb34614/2drepresentation/9130b967-5b15-448a-b935-0759a0f0aed6> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_2" .
+    <https://veniss.net/presence/9c624719-1f83-41c0-9f33-ac9c03564c29/2drepresentation/e99feca2-f728-4b74-8775-d41f53c29da3> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_11.4" .
+
+    # Phase: SSP_BLDG_11.3
+    <https://veniss.net/presence/f5391709-eb3c-45ac-8bc9-d7fa0b37d023> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/de9244c7-2959-4d49-89dd-403464cd4346> ;
+      crm:P138i_has_representation <https://veniss.net/presence/f5391709-eb3c-45ac-8bc9-d7fa0b37d023/2drepresentation/97429a18-d315-4136-abb2-fbdab619f108> .
+
+    <https://veniss.net/timespan/de9244c7-2959-4d49-89dd-403464cd4346> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1841-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1930-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/f5391709-eb3c-45ac-8bc9-d7fa0b37d023/2drepresentation/97429a18-d315-4136-abb2-fbdab619f108> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_11.3" .
+
+    # Phase: SSP_BLDG_11.2
+    <https://veniss.net/presence/afa6e99c-551d-46b8-bbd5-4cb083c74c76> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/37bdd29e-4575-4402-8a9e-8e36675e9209> ;
+      crm:P138i_has_representation <https://veniss.net/presence/afa6e99c-551d-46b8-bbd5-4cb083c74c76/2drepresentation/82cd1002-9b99-4521-abf6-05dc34f065fc> .
+
+    <https://veniss.net/timespan/37bdd29e-4575-4402-8a9e-8e36675e9209> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1981-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/afa6e99c-551d-46b8-bbd5-4cb083c74c76/2drepresentation/82cd1002-9b99-4521-abf6-05dc34f065fc> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_11.2" .
+
+    # Phase: SSP_BLDG_11.1
+    <https://veniss.net/presence/4c92a258-fc7e-4d07-934f-85e6cec4186f> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/c5952d69-713f-42f2-8d73-7099a43b7d78> ;
+      crm:P138i_has_representation <https://veniss.net/presence/4c92a258-fc7e-4d07-934f-85e6cec4186f/2drepresentation/3745d949-e96c-4ad1-8645-43cff0785ac7> .
+
+    <https://veniss.net/timespan/c5952d69-713f-42f2-8d73-7099a43b7d78> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1999-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/4c92a258-fc7e-4d07-934f-85e6cec4186f/2drepresentation/3745d949-e96c-4ad1-8645-43cff0785ac7> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_11.1" .
+
+    # Phase: SSP_BLDG_11
+    <https://veniss.net/presence/6f42702f-a410-4bfd-8b1a-e02024fe2392> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/8ed857f2-e5a9-4714-a323-3ea2e456afe4> ;
+      crm:P138i_has_representation <https://veniss.net/presence/6f42702f-a410-4bfd-8b1a-e02024fe2392/2drepresentation/7e598b12-a617-4fce-8e3e-2d1e10702cd2> .
+
+    <https://veniss.net/timespan/8ed857f2-e5a9-4714-a323-3ea2e456afe4> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/6f42702f-a410-4bfd-8b1a-e02024fe2392/2drepresentation/7e598b12-a617-4fce-8e3e-2d1e10702cd2> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_11" .
 
   }
 }
 
 
 ================================================================================
-Building 2/17: SSP_BLDG_6
-Name: Atrio casa dell'ortolano 6
+Building 2/51: SSP_BLDG_6
+Name: Barrack 6
 Number of phases: 1
 ================================================================================
 
@@ -65,32 +121,32 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/f7ebd1a1-2803-4a55-8570-dd515bfb433b> a veniss:Building ;
-      rdfs:label "Atrio casa dell'ortolano" ;
+    <https://veniss.net/builtwork/eced57d8-2383-4e35-a140-8b2c17e303bd> a veniss:Building ;
+      rdfs:label "Barrack" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/f0313bc3-fb29-41d5-8340-4d9f8f91c013> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/40a75bb5-e616-47a9-a7ce-d9bb51b33fed> .
 
     # Identifier
-    <https://veniss.net/builtwork/f7ebd1a1-2803-4a55-8570-dd515bfb433b/identifier/1b1c4621-1491-420f-8654-f87288f95983> a crm:E42_Identifier ;
+    <https://veniss.net/builtwork/eced57d8-2383-4e35-a140-8b2c17e303bd/identifier/73231034-b2a0-4643-9513-286e835028db> a crm:E42_Identifier ;
       rdfs:value "SSP_BLDG_6" .
 
-    <https://veniss.net/builtwork/f7ebd1a1-2803-4a55-8570-dd515bfb433b> crm:P1_is_identified_by <https://veniss.net/builtwork/f7ebd1a1-2803-4a55-8570-dd515bfb433b/identifier/1b1c4621-1491-420f-8654-f87288f95983> .
+    <https://veniss.net/builtwork/eced57d8-2383-4e35-a140-8b2c17e303bd> crm:P1_is_identified_by <https://veniss.net/builtwork/eced57d8-2383-4e35-a140-8b2c17e303bd/identifier/73231034-b2a0-4643-9513-286e835028db> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/f0313bc3-fb29-41d5-8340-4d9f8f91c013> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/40a75bb5-e616-47a9-a7ce-d9bb51b33fed> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/d36c24b0-a151-4a1b-a2bd-f65eaa820463> .
+        <https://veniss.net/presence/179704e1-80e9-4bb8-ba07-bc6eb0e76da7> .
 
     # Phase: SSP_BLDG_6
-    <https://veniss.net/presence/d36c24b0-a151-4a1b-a2bd-f65eaa820463> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/54e8d381-f78a-4cf5-a87a-71e44641d54c> ;
-      crm:P138i_has_representation <https://veniss.net/presence/d36c24b0-a151-4a1b-a2bd-f65eaa820463/2drepresentation/df7ef092-a233-450c-8bc0-99867aaad000> .
+    <https://veniss.net/presence/179704e1-80e9-4bb8-ba07-bc6eb0e76da7> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/1627c070-f64e-4c5a-8c1d-d6684e0a6c10> ;
+      crm:P138i_has_representation <https://veniss.net/presence/179704e1-80e9-4bb8-ba07-bc6eb0e76da7/2drepresentation/efd5ee08-8dc1-48f6-91b1-9b2bb1f70963> .
 
-    <https://veniss.net/timespan/54e8d381-f78a-4cf5-a87a-71e44641d54c> a crm:E52_Time-Span ;
+    <https://veniss.net/timespan/1627c070-f64e-4c5a-8c1d-d6684e0a6c10> a crm:E52_Time-Span ;
       crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/d36c24b0-a151-4a1b-a2bd-f65eaa820463/2drepresentation/df7ef092-a233-450c-8bc0-99867aaad000> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/179704e1-80e9-4bb8-ba07-bc6eb0e76da7/2drepresentation/efd5ee08-8dc1-48f6-91b1-9b2bb1f70963> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_6" .
 
   }
@@ -98,55 +154,8 @@ INSERT DATA {
 
 
 ================================================================================
-Building 3/17: SSP_BLDG_1
-Name: Ex chiesa 1
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/eddef3fc-bb7f-4551-86a3-6c283c87ddc3> a veniss:Building ;
-      rdfs:label "Ex chiesa" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/68de4103-1a13-4192-a865-13bf3b79aae5> .
-
-    # Identifier
-    <https://veniss.net/builtwork/eddef3fc-bb7f-4551-86a3-6c283c87ddc3/identifier/d4070ce5-9bdc-4a38-8960-806846e35abc> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_1" .
-
-    <https://veniss.net/builtwork/eddef3fc-bb7f-4551-86a3-6c283c87ddc3> crm:P1_is_identified_by <https://veniss.net/builtwork/eddef3fc-bb7f-4551-86a3-6c283c87ddc3/identifier/d4070ce5-9bdc-4a38-8960-806846e35abc> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/68de4103-1a13-4192-a865-13bf3b79aae5> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/36717c2e-541e-44d1-902e-e74b635f23d1> .
-
-    # Phase: SSP_BLDG_1
-    <https://veniss.net/presence/36717c2e-541e-44d1-902e-e74b635f23d1> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/03d41cf4-305b-436a-9ea7-83ac17cf1296> ;
-      crm:P138i_has_representation <https://veniss.net/presence/36717c2e-541e-44d1-902e-e74b635f23d1/2drepresentation/71f67cfd-c743-4642-bc9f-20614e7cfd79> .
-
-    <https://veniss.net/timespan/03d41cf4-305b-436a-9ea7-83ac17cf1296> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/36717c2e-541e-44d1-902e-e74b635f23d1/2drepresentation/71f67cfd-c743-4642-bc9f-20614e7cfd79> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_1" .
-
-  }
-}
-
-
-================================================================================
-Building 4/17: SSP_BLDG_14
-Name: Ex edificio 14
+Building 3/51: SSP_BLDG_2
+Name: Monastery 2
 Number of phases: 2
 ================================================================================
 
@@ -159,46 +168,107 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/7698f4d3-4a9a-4fc6-b6f4-6260397253c7> a veniss:Building ;
-      rdfs:label "Ex edificio" ;
+    <https://veniss.net/builtwork/86fbaa37-f46e-4500-b2d6-bd990c0615a3> a veniss:Building ;
+      rdfs:label "Monastery" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/131f8800-dcf3-41dd-a4b8-f662338300c9> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/64d279ca-82b0-4de1-b472-0c9b71914d31> .
 
     # Identifier
-    <https://veniss.net/builtwork/7698f4d3-4a9a-4fc6-b6f4-6260397253c7/identifier/79b0eb8d-782b-4ce7-815f-f844b0d29c6c> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_14" .
+    <https://veniss.net/builtwork/86fbaa37-f46e-4500-b2d6-bd990c0615a3/identifier/415469b8-01db-4bc3-a48a-c43d407a9b72> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_2" .
 
-    <https://veniss.net/builtwork/7698f4d3-4a9a-4fc6-b6f4-6260397253c7> crm:P1_is_identified_by <https://veniss.net/builtwork/7698f4d3-4a9a-4fc6-b6f4-6260397253c7/identifier/79b0eb8d-782b-4ce7-815f-f844b0d29c6c> .
+    <https://veniss.net/builtwork/86fbaa37-f46e-4500-b2d6-bd990c0615a3> crm:P1_is_identified_by <https://veniss.net/builtwork/86fbaa37-f46e-4500-b2d6-bd990c0615a3/identifier/415469b8-01db-4bc3-a48a-c43d407a9b72> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/131f8800-dcf3-41dd-a4b8-f662338300c9> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/64d279ca-82b0-4de1-b472-0c9b71914d31> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/62242e3b-081b-4926-bec3-0be3f415a102>,
-        <https://veniss.net/presence/f8a06821-ccf8-4734-afe6-1998e45b8e73> .
+        <https://veniss.net/presence/926d99c0-2011-4c5a-9afc-4d893f658a86>,
+        <https://veniss.net/presence/63c21344-e202-4db6-a734-d4c48d086a72> .
+
+    # Phase: SSP_BLDG_2
+    <https://veniss.net/presence/926d99c0-2011-4c5a-9afc-4d893f658a86> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/a5f59387-e00b-4a5b-aa70-a4bf5a7597b7> ;
+      crm:P138i_has_representation <https://veniss.net/presence/926d99c0-2011-4c5a-9afc-4d893f658a86/2drepresentation/0459cd23-dde8-4b8e-abe5-31c8ad43ce34> .
+
+    <https://veniss.net/timespan/a5f59387-e00b-4a5b-aa70-a4bf5a7597b7> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1830-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/926d99c0-2011-4c5a-9afc-4d893f658a86/2drepresentation/0459cd23-dde8-4b8e-abe5-31c8ad43ce34> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_2" .
+
+    # Phase: SSP_BLDG_2.1
+    <https://veniss.net/presence/63c21344-e202-4db6-a734-d4c48d086a72> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/97721a69-1717-4b51-aab9-0a6f14fd40ab> ;
+      crm:P138i_has_representation <https://veniss.net/presence/63c21344-e202-4db6-a734-d4c48d086a72/2drepresentation/b05539f4-e2b0-485d-b5c2-33f1605131ff> .
+
+    <https://veniss.net/timespan/97721a69-1717-4b51-aab9-0a6f14fd40ab> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/63c21344-e202-4db6-a734-d4c48d086a72/2drepresentation/b05539f4-e2b0-485d-b5c2-33f1605131ff> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_2.1" .
+
+  }
+}
+
+
+================================================================================
+Building 4/51: SSP_BLDG_14
+Name: Latrine 14
+Number of phases: 2
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/c9995a5a-066d-4ad6-a848-f94fe50dac37> a veniss:Building ;
+      rdfs:label "Latrine" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/4d1264b0-e9a1-44e8-94e9-029947b2c6d0> .
+
+    # Identifier
+    <https://veniss.net/builtwork/c9995a5a-066d-4ad6-a848-f94fe50dac37/identifier/0ec0158c-8f24-4335-b9b8-8dfe9bca7a81> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_14" .
+
+    <https://veniss.net/builtwork/c9995a5a-066d-4ad6-a848-f94fe50dac37> crm:P1_is_identified_by <https://veniss.net/builtwork/c9995a5a-066d-4ad6-a848-f94fe50dac37/identifier/0ec0158c-8f24-4335-b9b8-8dfe9bca7a81> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/4d1264b0-e9a1-44e8-94e9-029947b2c6d0> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/87d4ed9a-2b30-48c6-8e75-26dd62e0acc4>,
+        <https://veniss.net/presence/2e647996-d3eb-4cd1-9cc5-2159ad486b18> .
 
     # Phase: SSP_BLDG_14.1
-    <https://veniss.net/presence/62242e3b-081b-4926-bec3-0be3f415a102> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/19badfef-1eb0-4954-9751-6a7353f5969b> ;
-      crm:P138i_has_representation <https://veniss.net/presence/62242e3b-081b-4926-bec3-0be3f415a102/2drepresentation/5dea092a-434b-4606-b273-1a9f8f5527f1> .
+    <https://veniss.net/presence/87d4ed9a-2b30-48c6-8e75-26dd62e0acc4> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/d118c74a-47f5-4e27-9e84-be237f48edda> ;
+      crm:P138i_has_representation <https://veniss.net/presence/87d4ed9a-2b30-48c6-8e75-26dd62e0acc4/2drepresentation/aceb8413-f434-498c-9593-7216bd6ee822> .
 
-    <https://veniss.net/timespan/19badfef-1eb0-4954-9751-6a7353f5969b> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+    <https://veniss.net/timespan/d118c74a-47f5-4e27-9e84-be237f48edda> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
       ; crm:P82b_end_of_the_end "1999-12-31"^^xsd:date
       .
 
-    <https://veniss.net/presence/62242e3b-081b-4926-bec3-0be3f415a102/2drepresentation/5dea092a-434b-4606-b273-1a9f8f5527f1> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/87d4ed9a-2b30-48c6-8e75-26dd62e0acc4/2drepresentation/aceb8413-f434-498c-9593-7216bd6ee822> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_14.1" .
 
     # Phase: SSP_BLDG_14
-    <https://veniss.net/presence/f8a06821-ccf8-4734-afe6-1998e45b8e73> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/b423ff50-1771-4505-a41c-f85906484b08> ;
-      crm:P138i_has_representation <https://veniss.net/presence/f8a06821-ccf8-4734-afe6-1998e45b8e73/2drepresentation/ad65622a-e1ca-46c9-ae2d-c27436408abe> .
+    <https://veniss.net/presence/2e647996-d3eb-4cd1-9cc5-2159ad486b18> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/318fb2f1-a95f-4edb-a48b-e0dd29a2f5dd> ;
+      crm:P138i_has_representation <https://veniss.net/presence/2e647996-d3eb-4cd1-9cc5-2159ad486b18/2drepresentation/cedc3984-14e0-456d-9e24-11bdda660977> .
 
-    <https://veniss.net/timespan/b423ff50-1771-4505-a41c-f85906484b08> a crm:E52_Time-Span ;
+    <https://veniss.net/timespan/318fb2f1-a95f-4edb-a48b-e0dd29a2f5dd> a crm:E52_Time-Span ;
       crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/f8a06821-ccf8-4734-afe6-1998e45b8e73/2drepresentation/ad65622a-e1ca-46c9-ae2d-c27436408abe> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/2e647996-d3eb-4cd1-9cc5-2159ad486b18/2drepresentation/cedc3984-14e0-456d-9e24-11bdda660977> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_14" .
 
   }
@@ -206,242 +276,7 @@ INSERT DATA {
 
 
 ================================================================================
-Building 5/17: SSP_BLDG_9
-Name: Ex postazione di artiglieria 9
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/2f0320c9-4731-4c9a-9ef6-e35f30a24de8> a veniss:Building ;
-      rdfs:label "Ex postazione di artiglieria" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/35ee929b-1065-4185-a59e-84f6826a3155> .
-
-    # Identifier
-    <https://veniss.net/builtwork/2f0320c9-4731-4c9a-9ef6-e35f30a24de8/identifier/18f8e52b-3ff8-427c-943a-110b0925bc1d> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_9" .
-
-    <https://veniss.net/builtwork/2f0320c9-4731-4c9a-9ef6-e35f30a24de8> crm:P1_is_identified_by <https://veniss.net/builtwork/2f0320c9-4731-4c9a-9ef6-e35f30a24de8/identifier/18f8e52b-3ff8-427c-943a-110b0925bc1d> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/35ee929b-1065-4185-a59e-84f6826a3155> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/1c20384d-a4eb-45f7-a537-773310e10eab> .
-
-    # Phase: SSP_BLDG_9
-    <https://veniss.net/presence/1c20384d-a4eb-45f7-a537-773310e10eab> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/9a15fed3-3d7b-4389-a9fe-339b2131b4ec> ;
-      crm:P138i_has_representation <https://veniss.net/presence/1c20384d-a4eb-45f7-a537-773310e10eab/2drepresentation/0eb83b0d-b1b0-4940-b74b-cfb44174c49f> .
-
-    <https://veniss.net/timespan/9a15fed3-3d7b-4389-a9fe-339b2131b4ec> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/1c20384d-a4eb-45f7-a537-773310e10eab/2drepresentation/0eb83b0d-b1b0-4940-b74b-cfb44174c49f> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_9" .
-
-  }
-}
-
-
-================================================================================
-Building 6/17: SSP_BLDG_3
-Name: Bunker 3
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/906b883f-ec70-43fc-85c6-e451a4c89f2a> a veniss:Building ;
-      rdfs:label "Bunker" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/97d7752c-f25d-4cf6-953b-ba008dbd627e> .
-
-    # Identifier
-    <https://veniss.net/builtwork/906b883f-ec70-43fc-85c6-e451a4c89f2a/identifier/86b692c3-3c2a-483a-af9d-bb8e74ab2cdc> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_3" .
-
-    <https://veniss.net/builtwork/906b883f-ec70-43fc-85c6-e451a4c89f2a> crm:P1_is_identified_by <https://veniss.net/builtwork/906b883f-ec70-43fc-85c6-e451a4c89f2a/identifier/86b692c3-3c2a-483a-af9d-bb8e74ab2cdc> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/97d7752c-f25d-4cf6-953b-ba008dbd627e> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/0264f898-10da-421a-84a2-7f39b3e971bb> .
-
-    # Phase: SSP_BLDG_3
-    <https://veniss.net/presence/0264f898-10da-421a-84a2-7f39b3e971bb> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/0b90a0f4-00c0-47d5-acb2-78addb03e671> ;
-      crm:P138i_has_representation <https://veniss.net/presence/0264f898-10da-421a-84a2-7f39b3e971bb/2drepresentation/14918317-1667-4c03-b90d-4bf806c6f382> .
-
-    <https://veniss.net/timespan/0b90a0f4-00c0-47d5-acb2-78addb03e671> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/0264f898-10da-421a-84a2-7f39b3e971bb/2drepresentation/14918317-1667-4c03-b90d-4bf806c6f382> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_3" .
-
-  }
-}
-
-
-================================================================================
-Building 7/17: SSP_BLDG_11
-Name: Muro di cinta 11
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/c842a654-e0a8-4184-a3e7-ae802cee3d44> a veniss:Building ;
-      rdfs:label "Muro di cinta" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/c2ad1cae-aa06-47f8-bd8a-eaf32c770ad6> .
-
-    # Identifier
-    <https://veniss.net/builtwork/c842a654-e0a8-4184-a3e7-ae802cee3d44/identifier/7affce98-b4f7-4fe0-8cdd-c27862972b0f> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_11" .
-
-    <https://veniss.net/builtwork/c842a654-e0a8-4184-a3e7-ae802cee3d44> crm:P1_is_identified_by <https://veniss.net/builtwork/c842a654-e0a8-4184-a3e7-ae802cee3d44/identifier/7affce98-b4f7-4fe0-8cdd-c27862972b0f> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/c2ad1cae-aa06-47f8-bd8a-eaf32c770ad6> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/ef9e63b2-b19e-48e6-ad64-3a3926eb8554> .
-
-    # Phase: SSP_BLDG_11
-    <https://veniss.net/presence/ef9e63b2-b19e-48e6-ad64-3a3926eb8554> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/a758e4d5-13fc-46c3-8b27-de25974948f6> ;
-      crm:P138i_has_representation <https://veniss.net/presence/ef9e63b2-b19e-48e6-ad64-3a3926eb8554/2drepresentation/a5c5db51-d0bf-4747-8328-cbd9f03dda2a> .
-
-    <https://veniss.net/timespan/a758e4d5-13fc-46c3-8b27-de25974948f6> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/ef9e63b2-b19e-48e6-ad64-3a3926eb8554/2drepresentation/a5c5db51-d0bf-4747-8328-cbd9f03dda2a> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_11" .
-
-  }
-}
-
-
-================================================================================
-Building 8/17: SSP_BLDG_10
-Name: Ex postazione di artiglieria 10
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/21b1c73c-8c99-405b-b701-ad710c23a16a> a veniss:Building ;
-      rdfs:label "Ex postazione di artiglieria" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/7de0fab4-acfd-4cb0-87e2-c72898f7c783> .
-
-    # Identifier
-    <https://veniss.net/builtwork/21b1c73c-8c99-405b-b701-ad710c23a16a/identifier/5d4cea13-b465-4667-a452-5414bbf823bf> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_10" .
-
-    <https://veniss.net/builtwork/21b1c73c-8c99-405b-b701-ad710c23a16a> crm:P1_is_identified_by <https://veniss.net/builtwork/21b1c73c-8c99-405b-b701-ad710c23a16a/identifier/5d4cea13-b465-4667-a452-5414bbf823bf> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/7de0fab4-acfd-4cb0-87e2-c72898f7c783> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/91665be3-5296-4170-9da3-9fd949e66fea> .
-
-    # Phase: SSP_BLDG_10
-    <https://veniss.net/presence/91665be3-5296-4170-9da3-9fd949e66fea> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/9c5adb9d-68ab-4f9b-b9f7-e642b4182e51> ;
-      crm:P138i_has_representation <https://veniss.net/presence/91665be3-5296-4170-9da3-9fd949e66fea/2drepresentation/c34bb4da-8310-4b3a-bca1-f91fee43fe90> .
-
-    <https://veniss.net/timespan/9c5adb9d-68ab-4f9b-b9f7-e642b4182e51> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/91665be3-5296-4170-9da3-9fd949e66fea/2drepresentation/c34bb4da-8310-4b3a-bca1-f91fee43fe90> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_10" .
-
-  }
-}
-
-
-================================================================================
-Building 9/17: SSP_BLDG_8
-Name: Ex postazione di artiglieria 8
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/0a83135c-1114-4dfe-8bab-45a44d4970d6> a veniss:Building ;
-      rdfs:label "Ex postazione di artiglieria" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/3884f58e-9b2d-4a82-a997-b040d245baaf> .
-
-    # Identifier
-    <https://veniss.net/builtwork/0a83135c-1114-4dfe-8bab-45a44d4970d6/identifier/ca5bcd1d-6da9-47c9-a499-bd3bfab25238> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_8" .
-
-    <https://veniss.net/builtwork/0a83135c-1114-4dfe-8bab-45a44d4970d6> crm:P1_is_identified_by <https://veniss.net/builtwork/0a83135c-1114-4dfe-8bab-45a44d4970d6/identifier/ca5bcd1d-6da9-47c9-a499-bd3bfab25238> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/3884f58e-9b2d-4a82-a997-b040d245baaf> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/a68e81d9-7786-48e2-9391-1afa9d4ce23d> .
-
-    # Phase: SSP_BLDG_8
-    <https://veniss.net/presence/a68e81d9-7786-48e2-9391-1afa9d4ce23d> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/50f1e590-2c62-4fe8-93f0-e84c9674d00f> ;
-      crm:P138i_has_representation <https://veniss.net/presence/a68e81d9-7786-48e2-9391-1afa9d4ce23d/2drepresentation/91441c6e-b2e0-4b7c-ba6d-87b2a25c9bdb> .
-
-    <https://veniss.net/timespan/50f1e590-2c62-4fe8-93f0-e84c9674d00f> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/a68e81d9-7786-48e2-9391-1afa9d4ce23d/2drepresentation/91441c6e-b2e0-4b7c-ba6d-87b2a25c9bdb> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_8" .
-
-  }
-}
-
-
-================================================================================
-Building 10/17: SSP_BLDG_15
+Building 5/51: SSP_BLDG_15
 Name: Latrine 15
 Number of phases: 1
 ================================================================================
@@ -455,32 +290,32 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/80277408-59da-41c2-a3f3-873973b52970> a veniss:Building ;
+    <https://veniss.net/builtwork/59b70641-66da-4179-8095-9efb62f08977> a veniss:Building ;
       rdfs:label "Latrine" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/43bc21b3-a69e-483a-bcfe-032098a92320> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/0bb8b680-316c-494d-b24d-c63b419f89a2> .
 
     # Identifier
-    <https://veniss.net/builtwork/80277408-59da-41c2-a3f3-873973b52970/identifier/54933084-e496-4633-980f-83cfad937555> a crm:E42_Identifier ;
+    <https://veniss.net/builtwork/59b70641-66da-4179-8095-9efb62f08977/identifier/6b48e436-e873-4540-b112-d3e901df8a40> a crm:E42_Identifier ;
       rdfs:value "SSP_BLDG_15" .
 
-    <https://veniss.net/builtwork/80277408-59da-41c2-a3f3-873973b52970> crm:P1_is_identified_by <https://veniss.net/builtwork/80277408-59da-41c2-a3f3-873973b52970/identifier/54933084-e496-4633-980f-83cfad937555> .
+    <https://veniss.net/builtwork/59b70641-66da-4179-8095-9efb62f08977> crm:P1_is_identified_by <https://veniss.net/builtwork/59b70641-66da-4179-8095-9efb62f08977/identifier/6b48e436-e873-4540-b112-d3e901df8a40> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/43bc21b3-a69e-483a-bcfe-032098a92320> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/0bb8b680-316c-494d-b24d-c63b419f89a2> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/b59f3094-6911-456a-869a-684cce60d424> .
+        <https://veniss.net/presence/6c5dbe96-5b90-4a39-8a61-a65612fe084e> .
 
     # Phase: SSP_BLDG_15
-    <https://veniss.net/presence/b59f3094-6911-456a-869a-684cce60d424> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/da5ae98f-91fb-4e53-b2bf-0d6a31498b06> ;
-      crm:P138i_has_representation <https://veniss.net/presence/b59f3094-6911-456a-869a-684cce60d424/2drepresentation/8318345d-f983-4e42-938b-fc4e97f065f6> .
+    <https://veniss.net/presence/6c5dbe96-5b90-4a39-8a61-a65612fe084e> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/cd3b7dad-e549-4b94-bbd1-8de369aa427a> ;
+      crm:P138i_has_representation <https://veniss.net/presence/6c5dbe96-5b90-4a39-8a61-a65612fe084e/2drepresentation/1da6647e-f20f-4b17-ad64-4d1a80716ac5> .
 
-    <https://veniss.net/timespan/da5ae98f-91fb-4e53-b2bf-0d6a31498b06> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+    <https://veniss.net/timespan/cd3b7dad-e549-4b94-bbd1-8de369aa427a> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1841-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/b59f3094-6911-456a-869a-684cce60d424/2drepresentation/8318345d-f983-4e42-938b-fc4e97f065f6> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/6c5dbe96-5b90-4a39-8a61-a65612fe084e/2drepresentation/1da6647e-f20f-4b17-ad64-4d1a80716ac5> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_15" .
 
   }
@@ -488,8 +323,55 @@ INSERT DATA {
 
 
 ================================================================================
-Building 11/17: SSP_BLDG_13
-Name: Lavatoio 13
+Building 6/51: SSP_BLDG_3
+Name: Military bunker 3
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/1a6a4bbb-05d2-408b-9e7c-7d73f2699df6> a veniss:Building ;
+      rdfs:label "Military bunker" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/4217641f-156d-4df2-9fab-3c00cc5d8499> .
+
+    # Identifier
+    <https://veniss.net/builtwork/1a6a4bbb-05d2-408b-9e7c-7d73f2699df6/identifier/cae345a9-eb70-453a-8bd0-ad4753f9ad09> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_3" .
+
+    <https://veniss.net/builtwork/1a6a4bbb-05d2-408b-9e7c-7d73f2699df6> crm:P1_is_identified_by <https://veniss.net/builtwork/1a6a4bbb-05d2-408b-9e7c-7d73f2699df6/identifier/cae345a9-eb70-453a-8bd0-ad4753f9ad09> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/4217641f-156d-4df2-9fab-3c00cc5d8499> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/b06e8a0c-7f2b-4b26-a5ab-252b287b5c6c> .
+
+    # Phase: SSP_BLDG_3
+    <https://veniss.net/presence/b06e8a0c-7f2b-4b26-a5ab-252b287b5c6c> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/9490b118-6e23-4b09-b0af-c1668fe4de50> ;
+      crm:P138i_has_representation <https://veniss.net/presence/b06e8a0c-7f2b-4b26-a5ab-252b287b5c6c/2drepresentation/0f648854-7870-4833-ae03-1754c1988cb3> .
+
+    <https://veniss.net/timespan/9490b118-6e23-4b09-b0af-c1668fe4de50> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/b06e8a0c-7f2b-4b26-a5ab-252b287b5c6c/2drepresentation/0f648854-7870-4833-ae03-1754c1988cb3> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_3" .
+
+  }
+}
+
+
+================================================================================
+Building 7/51: SSP_BLDG_1
+Name: Church 1
 Number of phases: 2
 ================================================================================
 
@@ -502,55 +384,116 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/b60588c6-5bfa-42f6-addd-4909787952eb> a veniss:Building ;
-      rdfs:label "Lavatoio" ;
+    <https://veniss.net/builtwork/27fa3dba-6bce-4ad9-b4bb-9393549e0eb8> a veniss:Building ;
+      rdfs:label "Church" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/8ed0f57c-4f39-493c-8c52-b7071997f9bb> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/efbc4dcf-3294-4140-8da3-26eff16c6dfa> .
 
     # Identifier
-    <https://veniss.net/builtwork/b60588c6-5bfa-42f6-addd-4909787952eb/identifier/a46d250c-cb8a-4d7d-a90e-e6c0cc22689d> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_13" .
+    <https://veniss.net/builtwork/27fa3dba-6bce-4ad9-b4bb-9393549e0eb8/identifier/7f632b3a-e773-429f-97b0-be2efaeb3699> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_1" .
 
-    <https://veniss.net/builtwork/b60588c6-5bfa-42f6-addd-4909787952eb> crm:P1_is_identified_by <https://veniss.net/builtwork/b60588c6-5bfa-42f6-addd-4909787952eb/identifier/a46d250c-cb8a-4d7d-a90e-e6c0cc22689d> .
+    <https://veniss.net/builtwork/27fa3dba-6bce-4ad9-b4bb-9393549e0eb8> crm:P1_is_identified_by <https://veniss.net/builtwork/27fa3dba-6bce-4ad9-b4bb-9393549e0eb8/identifier/7f632b3a-e773-429f-97b0-be2efaeb3699> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/8ed0f57c-4f39-493c-8c52-b7071997f9bb> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/efbc4dcf-3294-4140-8da3-26eff16c6dfa> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/6ea52f46-d5e3-4e39-a014-340e5b3ff8bb>,
-        <https://veniss.net/presence/3d423db5-f4f5-45be-998d-dc633fdc861d> .
+        <https://veniss.net/presence/5eee578b-fe33-4ba0-9e9c-46ddb7245aa6>,
+        <https://veniss.net/presence/8d9d0493-9a04-438c-bbc6-aa3fbe84cb8b> .
 
-    # Phase: SSP_BLDG_13.1
-    <https://veniss.net/presence/6ea52f46-d5e3-4e39-a014-340e5b3ff8bb> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/6b628e10-fbaf-4399-8bc9-8c5529ef07e1> ;
-      crm:P138i_has_representation <https://veniss.net/presence/6ea52f46-d5e3-4e39-a014-340e5b3ff8bb/2drepresentation/8f5f90de-2427-4e7c-b4b2-f5d4dee06370> .
+    # Phase: SSP_BLDG_1.1
+    <https://veniss.net/presence/5eee578b-fe33-4ba0-9e9c-46ddb7245aa6> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/cf6aeaec-3708-4c8e-9700-3b3a020defc6> ;
+      crm:P138i_has_representation <https://veniss.net/presence/5eee578b-fe33-4ba0-9e9c-46ddb7245aa6/2drepresentation/ee7bbc71-23e7-434b-bff2-1bd7c77d3dd3> .
 
-    <https://veniss.net/timespan/6b628e10-fbaf-4399-8bc9-8c5529ef07e1> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      ; crm:P82b_end_of_the_end "1999-12-31"^^xsd:date
+    <https://veniss.net/timespan/cf6aeaec-3708-4c8e-9700-3b3a020defc6> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1840-12-31"^^xsd:date
       .
 
-    <https://veniss.net/presence/6ea52f46-d5e3-4e39-a014-340e5b3ff8bb/2drepresentation/8f5f90de-2427-4e7c-b4b2-f5d4dee06370> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_13.1" .
+    <https://veniss.net/presence/5eee578b-fe33-4ba0-9e9c-46ddb7245aa6/2drepresentation/ee7bbc71-23e7-434b-bff2-1bd7c77d3dd3> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_1.1" .
 
-    # Phase: SSP_BLDG_13
-    <https://veniss.net/presence/3d423db5-f4f5-45be-998d-dc633fdc861d> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/0f78862f-90ee-4b26-80cd-35ee58d746f1> ;
-      crm:P138i_has_representation <https://veniss.net/presence/3d423db5-f4f5-45be-998d-dc633fdc861d/2drepresentation/14f0b914-2b69-41fa-adf2-5aaa858d611c> .
+    # Phase: SSP_BLDG_1
+    <https://veniss.net/presence/8d9d0493-9a04-438c-bbc6-aa3fbe84cb8b> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/5b44fea4-86fe-454e-810e-716c48ff9a81> ;
+      crm:P138i_has_representation <https://veniss.net/presence/8d9d0493-9a04-438c-bbc6-aa3fbe84cb8b/2drepresentation/5bffd35b-9f5d-452b-9e87-a8b33e93c354> .
 
-    <https://veniss.net/timespan/0f78862f-90ee-4b26-80cd-35ee58d746f1> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
+    <https://veniss.net/timespan/5b44fea4-86fe-454e-810e-716c48ff9a81> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1841-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/3d423db5-f4f5-45be-998d-dc633fdc861d/2drepresentation/14f0b914-2b69-41fa-adf2-5aaa858d611c> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_13" .
+    <https://veniss.net/presence/8d9d0493-9a04-438c-bbc6-aa3fbe84cb8b/2drepresentation/5bffd35b-9f5d-452b-9e87-a8b33e93c354> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_1" .
 
   }
 }
 
 
 ================================================================================
-Building 12/17: SSP_BLDG_12
-Name: Baracca 12
+Building 8/51: SSP_BLDG_16
+Name: Rabbit shed 16
+Number of phases: 2
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/a93473d8-6360-4d97-b1ec-cc08e9ea6e3d> a veniss:Building ;
+      rdfs:label "Rabbit shed" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/d6b1808b-8b8d-494c-ab24-7c9b91933352> .
+
+    # Identifier
+    <https://veniss.net/builtwork/a93473d8-6360-4d97-b1ec-cc08e9ea6e3d/identifier/b4b73e09-19ff-43f9-9576-ccefb235e729> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_16" .
+
+    <https://veniss.net/builtwork/a93473d8-6360-4d97-b1ec-cc08e9ea6e3d> crm:P1_is_identified_by <https://veniss.net/builtwork/a93473d8-6360-4d97-b1ec-cc08e9ea6e3d/identifier/b4b73e09-19ff-43f9-9576-ccefb235e729> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/d6b1808b-8b8d-494c-ab24-7c9b91933352> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/1e10f0da-21eb-4c07-9460-94852b86b631>,
+        <https://veniss.net/presence/19a8bc6c-7791-47cf-8106-eb6ca232f9e9> .
+
+    # Phase: SSP_BLDG_16.1
+    <https://veniss.net/presence/1e10f0da-21eb-4c07-9460-94852b86b631> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/b69a41f3-8e90-405a-81cb-6292f4881c70> ;
+      crm:P138i_has_representation <https://veniss.net/presence/1e10f0da-21eb-4c07-9460-94852b86b631/2drepresentation/3cf4f1a8-2f3c-4d04-ba9c-f071fb4ba98d> .
+
+    <https://veniss.net/timespan/b69a41f3-8e90-405a-81cb-6292f4881c70> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1981-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/1e10f0da-21eb-4c07-9460-94852b86b631/2drepresentation/3cf4f1a8-2f3c-4d04-ba9c-f071fb4ba98d> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_16.1" .
+
+    # Phase: SSP_BLDG_16
+    <https://veniss.net/presence/19a8bc6c-7791-47cf-8106-eb6ca232f9e9> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/364172bf-924c-4b76-a37c-0461f8e1bd9b> ;
+      crm:P138i_has_representation <https://veniss.net/presence/19a8bc6c-7791-47cf-8106-eb6ca232f9e9/2drepresentation/6a9a5c0d-776f-407b-8d83-094f42e92967> .
+
+    <https://veniss.net/timespan/364172bf-924c-4b76-a37c-0461f8e1bd9b> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/19a8bc6c-7791-47cf-8106-eb6ca232f9e9/2drepresentation/6a9a5c0d-776f-407b-8d83-094f42e92967> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_16" .
+
+  }
+}
+
+
+================================================================================
+Building 9/51: SSP_BLDG_12
+Name: Site storage container 12
 Number of phases: 1
 ================================================================================
 
@@ -563,32 +506,32 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/e0a24957-2d15-420b-9ccc-62fdfffd273b> a veniss:Building ;
-      rdfs:label "Baracca" ;
+    <https://veniss.net/builtwork/02a16544-2d6c-4a15-ba7e-9ce21a20749e> a veniss:Building ;
+      rdfs:label "Site storage container" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/0f596540-0ea3-4503-babc-b0bd97e97e0f> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/97d6b93c-2e12-46d1-88f4-cd984011f34c> .
 
     # Identifier
-    <https://veniss.net/builtwork/e0a24957-2d15-420b-9ccc-62fdfffd273b/identifier/fb5cea94-b06a-4b92-9cda-3ff2f3244d5f> a crm:E42_Identifier ;
+    <https://veniss.net/builtwork/02a16544-2d6c-4a15-ba7e-9ce21a20749e/identifier/7ba4f39a-5a5a-450e-992b-3d29c412d3cf> a crm:E42_Identifier ;
       rdfs:value "SSP_BLDG_12" .
 
-    <https://veniss.net/builtwork/e0a24957-2d15-420b-9ccc-62fdfffd273b> crm:P1_is_identified_by <https://veniss.net/builtwork/e0a24957-2d15-420b-9ccc-62fdfffd273b/identifier/fb5cea94-b06a-4b92-9cda-3ff2f3244d5f> .
+    <https://veniss.net/builtwork/02a16544-2d6c-4a15-ba7e-9ce21a20749e> crm:P1_is_identified_by <https://veniss.net/builtwork/02a16544-2d6c-4a15-ba7e-9ce21a20749e/identifier/7ba4f39a-5a5a-450e-992b-3d29c412d3cf> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/0f596540-0ea3-4503-babc-b0bd97e97e0f> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/97d6b93c-2e12-46d1-88f4-cd984011f34c> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/f029e91c-523c-43c6-bb2f-fcacc411cd72> .
+        <https://veniss.net/presence/e0eba993-e93b-4846-bd44-00be5e4a837e> .
 
     # Phase: SSP_BLDG_12
-    <https://veniss.net/presence/f029e91c-523c-43c6-bb2f-fcacc411cd72> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/e9266254-5c79-471a-a419-37585d197da0> ;
-      crm:P138i_has_representation <https://veniss.net/presence/f029e91c-523c-43c6-bb2f-fcacc411cd72/2drepresentation/868e042f-83f0-42bf-a364-7e67fe33c8c0> .
+    <https://veniss.net/presence/e0eba993-e93b-4846-bd44-00be5e4a837e> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/94f3eeb6-fcb9-4b1c-8dd6-4843afab50c9> ;
+      crm:P138i_has_representation <https://veniss.net/presence/e0eba993-e93b-4846-bd44-00be5e4a837e/2drepresentation/e4e3f87a-fb3b-4250-8822-721b485a904c> .
 
-    <https://veniss.net/timespan/e9266254-5c79-471a-a419-37585d197da0> a crm:E52_Time-Span ;
+    <https://veniss.net/timespan/94f3eeb6-fcb9-4b1c-8dd6-4843afab50c9> a crm:E52_Time-Span ;
       crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/f029e91c-523c-43c6-bb2f-fcacc411cd72/2drepresentation/868e042f-83f0-42bf-a364-7e67fe33c8c0> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/e0eba993-e93b-4846-bd44-00be5e4a837e/2drepresentation/e4e3f87a-fb3b-4250-8822-721b485a904c> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_12" .
 
   }
@@ -596,8 +539,8 @@ INSERT DATA {
 
 
 ================================================================================
-Building 13/17: SSP_BLDG_7
-Name: Polveriera 7
+Building 10/51: SSP_BLDG_5
+Name: Gardener's house 5
 Number of phases: 1
 ================================================================================
 
@@ -610,126 +553,32 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/6aeca6df-b809-4ff4-b163-1a826f0e77c2> a veniss:Building ;
-      rdfs:label "Polveriera" ;
+    <https://veniss.net/builtwork/f38fb87b-9eb5-4164-9db5-8510a09b1c07> a veniss:Building ;
+      rdfs:label "Gardener's house" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/2cc9ff34-5e97-4dd9-b063-68e910c143eb> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/7f7c72b7-3ec7-475d-b028-774a45cd51cc> .
 
     # Identifier
-    <https://veniss.net/builtwork/6aeca6df-b809-4ff4-b163-1a826f0e77c2/identifier/8ae2f107-1652-4f44-8d8f-c22e3453a0d1> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_7" .
-
-    <https://veniss.net/builtwork/6aeca6df-b809-4ff4-b163-1a826f0e77c2> crm:P1_is_identified_by <https://veniss.net/builtwork/6aeca6df-b809-4ff4-b163-1a826f0e77c2/identifier/8ae2f107-1652-4f44-8d8f-c22e3453a0d1> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/2cc9ff34-5e97-4dd9-b063-68e910c143eb> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/2e07e4c2-9556-4b89-bbd1-82d7228281e1> .
-
-    # Phase: SSP_BLDG_7
-    <https://veniss.net/presence/2e07e4c2-9556-4b89-bbd1-82d7228281e1> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/d7abfa20-2c35-4964-a8c0-a2736dd1f003> ;
-      crm:P138i_has_representation <https://veniss.net/presence/2e07e4c2-9556-4b89-bbd1-82d7228281e1/2drepresentation/a179f356-485d-49fb-abda-2a1005ecaafa> .
-
-    <https://veniss.net/timespan/d7abfa20-2c35-4964-a8c0-a2736dd1f003> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/2e07e4c2-9556-4b89-bbd1-82d7228281e1/2drepresentation/a179f356-485d-49fb-abda-2a1005ecaafa> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_7" .
-
-  }
-}
-
-
-================================================================================
-Building 14/17: SSP_BLDG_4
-Name: Cavana 4
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/c428ccf6-97ee-4ce9-bbad-3edaea74de18> a veniss:Building ;
-      rdfs:label "Cavana" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/002640c1-ad86-47e0-84d8-9d033de7c85d> .
-
-    # Identifier
-    <https://veniss.net/builtwork/c428ccf6-97ee-4ce9-bbad-3edaea74de18/identifier/2eef9ef6-3d78-4178-be3d-fdbe50ec73ee> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_4" .
-
-    <https://veniss.net/builtwork/c428ccf6-97ee-4ce9-bbad-3edaea74de18> crm:P1_is_identified_by <https://veniss.net/builtwork/c428ccf6-97ee-4ce9-bbad-3edaea74de18/identifier/2eef9ef6-3d78-4178-be3d-fdbe50ec73ee> .
-
-    # Physical changes container
-    <https://veniss.net/physical_changes/002640c1-ad86-47e0-84d8-9d033de7c85d> a crm:E92_Spacetime_Volume ;
-      crm:P166i_had_presence
-        <https://veniss.net/presence/355a4b83-892c-45d3-9bcf-32e23b365e4d> .
-
-    # Phase: SSP_BLDG_4
-    <https://veniss.net/presence/355a4b83-892c-45d3-9bcf-32e23b365e4d> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/1ebb856b-d6a9-4496-b06e-77adfecc1620> ;
-      crm:P138i_has_representation <https://veniss.net/presence/355a4b83-892c-45d3-9bcf-32e23b365e4d/2drepresentation/14d09583-e739-4f75-98d5-abb6e39a98cb> .
-
-    <https://veniss.net/timespan/1ebb856b-d6a9-4496-b06e-77adfecc1620> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
-      .
-
-    <https://veniss.net/presence/355a4b83-892c-45d3-9bcf-32e23b365e4d/2drepresentation/14d09583-e739-4f75-98d5-abb6e39a98cb> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_4" .
-
-  }
-}
-
-
-================================================================================
-Building 15/17: SSP_BLDG_5
-Name: Casa dell'ortolano 5
-Number of phases: 1
-================================================================================
-
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX veniss: <https://veniss.net/ontology#>
-
-INSERT DATA {
-  GRAPH <http://www.researchspace.org/resource/g/data> {
-
-    # Building node
-    <https://veniss.net/builtwork/4b02ccc6-d548-42b8-9954-c0770bb18f6c> a veniss:Building ;
-      rdfs:label "Casa dell'ortolano" ;
-      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/682e6cb2-09b7-4930-b231-12068b25bb0f> .
-
-    # Identifier
-    <https://veniss.net/builtwork/4b02ccc6-d548-42b8-9954-c0770bb18f6c/identifier/a83dbc4a-9205-455b-9947-ead89bb88d58> a crm:E42_Identifier ;
+    <https://veniss.net/builtwork/f38fb87b-9eb5-4164-9db5-8510a09b1c07/identifier/9e41a875-ee0f-486f-9f42-60d6cd5a793a> a crm:E42_Identifier ;
       rdfs:value "SSP_BLDG_5" .
 
-    <https://veniss.net/builtwork/4b02ccc6-d548-42b8-9954-c0770bb18f6c> crm:P1_is_identified_by <https://veniss.net/builtwork/4b02ccc6-d548-42b8-9954-c0770bb18f6c/identifier/a83dbc4a-9205-455b-9947-ead89bb88d58> .
+    <https://veniss.net/builtwork/f38fb87b-9eb5-4164-9db5-8510a09b1c07> crm:P1_is_identified_by <https://veniss.net/builtwork/f38fb87b-9eb5-4164-9db5-8510a09b1c07/identifier/9e41a875-ee0f-486f-9f42-60d6cd5a793a> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/682e6cb2-09b7-4930-b231-12068b25bb0f> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/7f7c72b7-3ec7-475d-b028-774a45cd51cc> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/8010ae6b-c117-4b33-9c8e-fcdce3fdc7de> .
+        <https://veniss.net/presence/0e8975aa-4b04-4329-b772-0ea8c1fca4e7> .
 
     # Phase: SSP_BLDG_5
-    <https://veniss.net/presence/8010ae6b-c117-4b33-9c8e-fcdce3fdc7de> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/497f56ee-c910-490d-ae2e-2bc132a57282> ;
-      crm:P138i_has_representation <https://veniss.net/presence/8010ae6b-c117-4b33-9c8e-fcdce3fdc7de/2drepresentation/35c270ef-45f9-4a9d-91c1-6539a79ed714> .
+    <https://veniss.net/presence/0e8975aa-4b04-4329-b772-0ea8c1fca4e7> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/bbb74ec3-aa31-45c6-8d88-00d62ac0d192> ;
+      crm:P138i_has_representation <https://veniss.net/presence/0e8975aa-4b04-4329-b772-0ea8c1fca4e7/2drepresentation/7cebbd65-fe4e-4614-a99c-b73c0054f567> .
 
-    <https://veniss.net/timespan/497f56ee-c910-490d-ae2e-2bc132a57282> a crm:E52_Time-Span ;
+    <https://veniss.net/timespan/bbb74ec3-aa31-45c6-8d88-00d62ac0d192> a crm:E52_Time-Span ;
       crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/8010ae6b-c117-4b33-9c8e-fcdce3fdc7de/2drepresentation/35c270ef-45f9-4a9d-91c1-6539a79ed714> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+    <https://veniss.net/presence/0e8975aa-4b04-4329-b772-0ea8c1fca4e7/2drepresentation/7cebbd65-fe4e-4614-a99c-b73c0054f567> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
       rdfs:label "SSP_BLDG_5" .
 
   }
@@ -737,8 +586,8 @@ INSERT DATA {
 
 
 ================================================================================
-Building 16/17: SSP_BUILDINGS_11
-Name: Muro di cinta 11.1
+Building 11/51: SSP_BLDG_9
+Name: Artillery position 9
 Number of phases: 1
 ================================================================================
 
@@ -751,41 +600,41 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/4c28e153-f813-47ea-8c83-5c6199e02d05> a veniss:Building ;
-      rdfs:label "Muro di cinta" ;
+    <https://veniss.net/builtwork/4b3a7023-8f29-4032-b273-dd4756cf385c> a veniss:Building ;
+      rdfs:label "Artillery position" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/6b699449-ce69-45c9-8f98-48a187feafdd> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/cd806d79-ba41-4d95-864f-744f0fd39762> .
 
     # Identifier
-    <https://veniss.net/builtwork/4c28e153-f813-47ea-8c83-5c6199e02d05/identifier/693319cb-7ff1-43bd-8297-f636c0891034> a crm:E42_Identifier ;
-      rdfs:value "SSP_BUILDINGS_11" .
+    <https://veniss.net/builtwork/4b3a7023-8f29-4032-b273-dd4756cf385c/identifier/3ef68bc8-d132-435d-860a-23ba76278f56> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_9" .
 
-    <https://veniss.net/builtwork/4c28e153-f813-47ea-8c83-5c6199e02d05> crm:P1_is_identified_by <https://veniss.net/builtwork/4c28e153-f813-47ea-8c83-5c6199e02d05/identifier/693319cb-7ff1-43bd-8297-f636c0891034> .
+    <https://veniss.net/builtwork/4b3a7023-8f29-4032-b273-dd4756cf385c> crm:P1_is_identified_by <https://veniss.net/builtwork/4b3a7023-8f29-4032-b273-dd4756cf385c/identifier/3ef68bc8-d132-435d-860a-23ba76278f56> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/6b699449-ce69-45c9-8f98-48a187feafdd> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/cd806d79-ba41-4d95-864f-744f0fd39762> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/a94b84d5-7769-4cad-b497-ce6c761bf125> .
+        <https://veniss.net/presence/d5f0dc95-fb30-4c5d-93c3-6bad4d8a70d3> .
 
-    # Phase: SSP_BUILDINGS_11.1
-    <https://veniss.net/presence/a94b84d5-7769-4cad-b497-ce6c761bf125> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/3f03d1f7-078e-4f54-8a25-d85dce6f7079> ;
-      crm:P138i_has_representation <https://veniss.net/presence/a94b84d5-7769-4cad-b497-ce6c761bf125/2drepresentation/d6eb92c0-b399-4cd7-ae74-1927add74b43> .
+    # Phase: SSP_BLDG_9
+    <https://veniss.net/presence/d5f0dc95-fb30-4c5d-93c3-6bad4d8a70d3> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/12152c66-3b6c-44fb-8940-0a468e150842> ;
+      crm:P138i_has_representation <https://veniss.net/presence/d5f0dc95-fb30-4c5d-93c3-6bad4d8a70d3/2drepresentation/8b559e44-a2d8-45ae-b44f-ae0c7eab92db> .
 
-    <https://veniss.net/timespan/3f03d1f7-078e-4f54-8a25-d85dce6f7079> a crm:E52_Time-Span ;
-      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+    <https://veniss.net/timespan/12152c66-3b6c-44fb-8940-0a468e150842> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/a94b84d5-7769-4cad-b497-ce6c761bf125/2drepresentation/d6eb92c0-b399-4cd7-ae74-1927add74b43> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BUILDINGS_11.1" .
+    <https://veniss.net/presence/d5f0dc95-fb30-4c5d-93c3-6bad4d8a70d3/2drepresentation/8b559e44-a2d8-45ae-b44f-ae0c7eab92db> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_9" .
 
   }
 }
 
 
 ================================================================================
-Building 17/17: SSP_BLDG_16
-Name: Conigliera 16
+Building 12/51: SSP_BLDG_4
+Name: Boathouse 4
 Number of phases: 1
 ================================================================================
 
@@ -798,33 +647,1936 @@ INSERT DATA {
   GRAPH <http://www.researchspace.org/resource/g/data> {
 
     # Building node
-    <https://veniss.net/builtwork/33bb38b1-3e6c-4987-ad1a-3676b7d145f6> a veniss:Building ;
-      rdfs:label "Conigliera" ;
+    <https://veniss.net/builtwork/f2695e66-2c95-4c4b-a39f-70db61929d36> a veniss:Building ;
+      rdfs:label "Boathouse" ;
       crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
-      crm:P196i_is_defined_by <https://veniss.net/physical_changes/1bac0de1-a84c-4651-aed2-67275292d53d> .
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/56fe590f-821e-4067-8417-90e32ce17815> .
 
     # Identifier
-    <https://veniss.net/builtwork/33bb38b1-3e6c-4987-ad1a-3676b7d145f6/identifier/883ce419-6dce-4443-a3f3-a5c95c85d577> a crm:E42_Identifier ;
-      rdfs:value "SSP_BLDG_16" .
+    <https://veniss.net/builtwork/f2695e66-2c95-4c4b-a39f-70db61929d36/identifier/0ea133d7-709e-4a9c-9b42-aa760706078e> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_4" .
 
-    <https://veniss.net/builtwork/33bb38b1-3e6c-4987-ad1a-3676b7d145f6> crm:P1_is_identified_by <https://veniss.net/builtwork/33bb38b1-3e6c-4987-ad1a-3676b7d145f6/identifier/883ce419-6dce-4443-a3f3-a5c95c85d577> .
+    <https://veniss.net/builtwork/f2695e66-2c95-4c4b-a39f-70db61929d36> crm:P1_is_identified_by <https://veniss.net/builtwork/f2695e66-2c95-4c4b-a39f-70db61929d36/identifier/0ea133d7-709e-4a9c-9b42-aa760706078e> .
 
     # Physical changes container
-    <https://veniss.net/physical_changes/1bac0de1-a84c-4651-aed2-67275292d53d> a crm:E92_Spacetime_Volume ;
+    <https://veniss.net/physical_changes/56fe590f-821e-4067-8417-90e32ce17815> a crm:E92_Spacetime_Volume ;
       crm:P166i_had_presence
-        <https://veniss.net/presence/dc0bb595-6540-4f6d-8d7c-f9876acd5c8f> .
+        <https://veniss.net/presence/d8252d87-7129-4e7f-985e-45ad6119c795> .
 
-    # Phase: SSP_BLDG_16
-    <https://veniss.net/presence/dc0bb595-6540-4f6d-8d7c-f9876acd5c8f> a crm:E93_Presence ;
-      crm:P4_has_time-span <https://veniss.net/timespan/fc3823ae-decb-4f79-9656-d1fd6fe42433> ;
-      crm:P138i_has_representation <https://veniss.net/presence/dc0bb595-6540-4f6d-8d7c-f9876acd5c8f/2drepresentation/d0812e77-8c67-4dda-92d2-bdead644903b> .
+    # Phase: SSP_BLDG_4
+    <https://veniss.net/presence/d8252d87-7129-4e7f-985e-45ad6119c795> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/35b4d66f-2072-4dc8-b720-ff74ae06fccd> ;
+      crm:P138i_has_representation <https://veniss.net/presence/d8252d87-7129-4e7f-985e-45ad6119c795/2drepresentation/76cc4781-6ac0-43d0-9adc-c61b9937f018> .
 
-    <https://veniss.net/timespan/fc3823ae-decb-4f79-9656-d1fd6fe42433> a crm:E52_Time-Span ;
+    <https://veniss.net/timespan/35b4d66f-2072-4dc8-b720-ff74ae06fccd> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/d8252d87-7129-4e7f-985e-45ad6119c795/2drepresentation/76cc4781-6ac0-43d0-9adc-c61b9937f018> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_4" .
+
+  }
+}
+
+
+================================================================================
+Building 13/51: SSP_BLDG_52
+Name: Guardhouse 52
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/e0f3a3f3-54fb-43d6-b73c-ee48de1ca304> a veniss:Building ;
+      rdfs:label "Guardhouse" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/fa7b25b4-a432-4acd-a665-ca4874b4d6f1> .
+
+    # Identifier
+    <https://veniss.net/builtwork/e0f3a3f3-54fb-43d6-b73c-ee48de1ca304/identifier/556dcffc-1b31-4dd4-b8f0-d38d54eba9e1> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_52" .
+
+    <https://veniss.net/builtwork/e0f3a3f3-54fb-43d6-b73c-ee48de1ca304> crm:P1_is_identified_by <https://veniss.net/builtwork/e0f3a3f3-54fb-43d6-b73c-ee48de1ca304/identifier/556dcffc-1b31-4dd4-b8f0-d38d54eba9e1> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/fa7b25b4-a432-4acd-a665-ca4874b4d6f1> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/f4646fa5-c611-4241-9545-ede02084cbb8> .
+
+    # Phase: SSP_BLDG_52
+    <https://veniss.net/presence/f4646fa5-c611-4241-9545-ede02084cbb8> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/da9db1c8-5220-4ca9-9aca-7b234d4c7dc6> ;
+      crm:P138i_has_representation <https://veniss.net/presence/f4646fa5-c611-4241-9545-ede02084cbb8/2drepresentation/7dd65aee-5e08-4c47-8fa4-674525668757> .
+
+    <https://veniss.net/timespan/da9db1c8-5220-4ca9-9aca-7b234d4c7dc6> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1841-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/f4646fa5-c611-4241-9545-ede02084cbb8/2drepresentation/7dd65aee-5e08-4c47-8fa4-674525668757> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_52" .
+
+  }
+}
+
+
+================================================================================
+Building 14/51: SSP_BLDG_19
+Name: Island dock 19
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/9a0b3a26-28b7-4371-afdb-2e3a84976ee1> a veniss:Building ;
+      rdfs:label "Island dock" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/52f82193-35f8-4cd8-ba83-50d1a7df2b96> .
+
+    # Identifier
+    <https://veniss.net/builtwork/9a0b3a26-28b7-4371-afdb-2e3a84976ee1/identifier/b3bcb25d-9db1-4f81-8ec8-83967b30f552> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_19" .
+
+    <https://veniss.net/builtwork/9a0b3a26-28b7-4371-afdb-2e3a84976ee1> crm:P1_is_identified_by <https://veniss.net/builtwork/9a0b3a26-28b7-4371-afdb-2e3a84976ee1/identifier/b3bcb25d-9db1-4f81-8ec8-83967b30f552> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/52f82193-35f8-4cd8-ba83-50d1a7df2b96> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/9c8be854-9cbb-4f63-9971-e56de13543e4> .
+
+    # Phase: SSP_BLDG_19
+    <https://veniss.net/presence/9c8be854-9cbb-4f63-9971-e56de13543e4> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/d52e67a2-20c3-4398-9494-6fc74151cae5> ;
+      crm:P138i_has_representation <https://veniss.net/presence/9c8be854-9cbb-4f63-9971-e56de13543e4/2drepresentation/e3749eab-2dfb-4f83-939e-43e257c9bdd9> .
+
+    <https://veniss.net/timespan/d52e67a2-20c3-4398-9494-6fc74151cae5> a crm:E52_Time-Span ;
       crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
       .
 
-    <https://veniss.net/presence/dc0bb595-6540-4f6d-8d7c-f9876acd5c8f/2drepresentation/d0812e77-8c67-4dda-92d2-bdead644903b> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
-      rdfs:label "SSP_BLDG_16" .
+    <https://veniss.net/presence/9c8be854-9cbb-4f63-9971-e56de13543e4/2drepresentation/e3749eab-2dfb-4f83-939e-43e257c9bdd9> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_19" .
+
+  }
+}
+
+
+================================================================================
+Building 15/51: SSP_BLDG_17
+Name: Wellhead pedistal 17
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/204db81d-7056-4413-acd7-ba944d8a14c0> a veniss:Building ;
+      rdfs:label "Wellhead pedistal" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/7ef2a7a6-d3b4-447d-b71b-0bbdfb4e9718> .
+
+    # Identifier
+    <https://veniss.net/builtwork/204db81d-7056-4413-acd7-ba944d8a14c0/identifier/381c8583-b7a0-431f-bfa3-518871a48daa> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_17" .
+
+    <https://veniss.net/builtwork/204db81d-7056-4413-acd7-ba944d8a14c0> crm:P1_is_identified_by <https://veniss.net/builtwork/204db81d-7056-4413-acd7-ba944d8a14c0/identifier/381c8583-b7a0-431f-bfa3-518871a48daa> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/7ef2a7a6-d3b4-447d-b71b-0bbdfb4e9718> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/24829c6a-719f-4ba7-8ef4-1addc66b1669> .
+
+    # Phase: SSP_BLDG_17
+    <https://veniss.net/presence/24829c6a-719f-4ba7-8ef4-1addc66b1669> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/7900c42b-8cca-40fc-ad11-eb826a3ca7c5> ;
+      crm:P138i_has_representation <https://veniss.net/presence/24829c6a-719f-4ba7-8ef4-1addc66b1669/2drepresentation/471b3306-8ae1-4f88-9bc3-ccc0fd00de45> .
+
+    <https://veniss.net/timespan/7900c42b-8cca-40fc-ad11-eb826a3ca7c5> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/24829c6a-719f-4ba7-8ef4-1addc66b1669/2drepresentation/471b3306-8ae1-4f88-9bc3-ccc0fd00de45> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_17" .
+
+  }
+}
+
+
+================================================================================
+Building 16/51: SSP_BLDG_7
+Name: Gunpowder tower 7
+Number of phases: 2
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/c70c26e6-39d6-4c1c-a7b0-b639133cef90> a veniss:Building ;
+      rdfs:label "Gunpowder tower" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/91e0b0e9-44f2-4ec3-9988-ca3ef23d8204> .
+
+    # Identifier
+    <https://veniss.net/builtwork/c70c26e6-39d6-4c1c-a7b0-b639133cef90/identifier/827cf8fb-5b8b-4093-92a2-9101661cfea3> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_7" .
+
+    <https://veniss.net/builtwork/c70c26e6-39d6-4c1c-a7b0-b639133cef90> crm:P1_is_identified_by <https://veniss.net/builtwork/c70c26e6-39d6-4c1c-a7b0-b639133cef90/identifier/827cf8fb-5b8b-4093-92a2-9101661cfea3> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/91e0b0e9-44f2-4ec3-9988-ca3ef23d8204> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/5d2dd3e2-7454-4ccb-bf1a-fed943cda474>,
+        <https://veniss.net/presence/30de1bbe-fdbf-420e-acd4-96c35781d901> .
+
+    # Phase: SSP_BLDG_7.1
+    <https://veniss.net/presence/5d2dd3e2-7454-4ccb-bf1a-fed943cda474> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/2112304a-b251-4f97-9610-3cdb7fdd3570> ;
+      crm:P138i_has_representation <https://veniss.net/presence/5d2dd3e2-7454-4ccb-bf1a-fed943cda474/2drepresentation/295e6f3a-7ad4-44b3-b59e-ce5ad1e8be83> .
+
+    <https://veniss.net/timespan/2112304a-b251-4f97-9610-3cdb7fdd3570> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1930-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/5d2dd3e2-7454-4ccb-bf1a-fed943cda474/2drepresentation/295e6f3a-7ad4-44b3-b59e-ce5ad1e8be83> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_7.1" .
+
+    # Phase: SSP_BLDG_7
+    <https://veniss.net/presence/30de1bbe-fdbf-420e-acd4-96c35781d901> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/17cd5e15-3c87-4305-93ef-8854bf1eb868> ;
+      crm:P138i_has_representation <https://veniss.net/presence/30de1bbe-fdbf-420e-acd4-96c35781d901/2drepresentation/93385182-f4d0-4472-b04a-733a8744a8b2> .
+
+    <https://veniss.net/timespan/17cd5e15-3c87-4305-93ef-8854bf1eb868> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/30de1bbe-fdbf-420e-acd4-96c35781d901/2drepresentation/93385182-f4d0-4472-b04a-733a8744a8b2> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_7" .
+
+  }
+}
+
+
+================================================================================
+Building 17/51: SSP_BLDG_21
+Name: Latrine 21
+Number of phases: 3
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/d9bd6ecb-c03c-4cf0-8668-503c06098ad0> a veniss:Building ;
+      rdfs:label "Latrine" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/00f2236b-8885-483e-8942-5f06ae733625> .
+
+    # Identifier
+    <https://veniss.net/builtwork/d9bd6ecb-c03c-4cf0-8668-503c06098ad0/identifier/386a5f91-6a88-4beb-a755-dba1fd22528b> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_21" .
+
+    <https://veniss.net/builtwork/d9bd6ecb-c03c-4cf0-8668-503c06098ad0> crm:P1_is_identified_by <https://veniss.net/builtwork/d9bd6ecb-c03c-4cf0-8668-503c06098ad0/identifier/386a5f91-6a88-4beb-a755-dba1fd22528b> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/00f2236b-8885-483e-8942-5f06ae733625> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/9b598382-984a-49bb-a3a5-5df614e44a81>,
+        <https://veniss.net/presence/70b9eda1-ed80-4d8a-b3e7-dd623d82f173>,
+        <https://veniss.net/presence/30044858-a929-4a75-83c4-856229225a9e> .
+
+    # Phase: SSP_BLDG_21.2
+    <https://veniss.net/presence/9b598382-984a-49bb-a3a5-5df614e44a81> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/ed251264-141b-41ea-a957-fb2929462d81> ;
+      crm:P138i_has_representation <https://veniss.net/presence/9b598382-984a-49bb-a3a5-5df614e44a81/2drepresentation/f7c2f3e7-51b7-4f08-bd40-9d3d3142c7f1> .
+
+    <https://veniss.net/timespan/ed251264-141b-41ea-a957-fb2929462d81> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1981-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/9b598382-984a-49bb-a3a5-5df614e44a81/2drepresentation/f7c2f3e7-51b7-4f08-bd40-9d3d3142c7f1> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_21.2" .
+
+    # Phase: SSP_BLDG_21.1
+    <https://veniss.net/presence/70b9eda1-ed80-4d8a-b3e7-dd623d82f173> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/442d48e5-996c-41e0-8a19-aaa864188384> ;
+      crm:P138i_has_representation <https://veniss.net/presence/70b9eda1-ed80-4d8a-b3e7-dd623d82f173/2drepresentation/ec7d3aff-ab6f-4850-a3a2-c1944c8f8a2e> .
+
+    <https://veniss.net/timespan/442d48e5-996c-41e0-8a19-aaa864188384> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1999-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/70b9eda1-ed80-4d8a-b3e7-dd623d82f173/2drepresentation/ec7d3aff-ab6f-4850-a3a2-c1944c8f8a2e> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_21.1" .
+
+    # Phase: SSP_BLDG_21
+    <https://veniss.net/presence/30044858-a929-4a75-83c4-856229225a9e> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/19dbf054-d35d-4e65-977a-23d8cd9d911e> ;
+      crm:P138i_has_representation <https://veniss.net/presence/30044858-a929-4a75-83c4-856229225a9e/2drepresentation/f662fb1e-78e4-4d85-8aba-1470d9040de1> .
+
+    <https://veniss.net/timespan/19dbf054-d35d-4e65-977a-23d8cd9d911e> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "2000-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/30044858-a929-4a75-83c4-856229225a9e/2drepresentation/f662fb1e-78e4-4d85-8aba-1470d9040de1> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_21" .
+
+  }
+}
+
+
+================================================================================
+Building 18/51: SSP_BLDG_20
+Name: Guardhouse 20
+Number of phases: 2
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/b6176228-ab02-49c0-a3f7-ec8e71ad0443> a veniss:Building ;
+      rdfs:label "Guardhouse" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/38c4eca3-4740-4a77-92b5-7670729af0e3> .
+
+    # Identifier
+    <https://veniss.net/builtwork/b6176228-ab02-49c0-a3f7-ec8e71ad0443/identifier/1e69dc01-281b-4f11-a48f-acc1ac9a425b> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_20" .
+
+    <https://veniss.net/builtwork/b6176228-ab02-49c0-a3f7-ec8e71ad0443> crm:P1_is_identified_by <https://veniss.net/builtwork/b6176228-ab02-49c0-a3f7-ec8e71ad0443/identifier/1e69dc01-281b-4f11-a48f-acc1ac9a425b> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/38c4eca3-4740-4a77-92b5-7670729af0e3> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/316772a7-19b0-4c99-936c-c3f288eaa452>,
+        <https://veniss.net/presence/7f58a017-6b25-49dd-b4ea-ed8d4cf15e4b> .
+
+    # Phase: SSP_BLDG_20.1
+    <https://veniss.net/presence/316772a7-19b0-4c99-936c-c3f288eaa452> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/60a51add-1035-466d-9f51-6c3d60cc4227> ;
+      crm:P138i_has_representation <https://veniss.net/presence/316772a7-19b0-4c99-936c-c3f288eaa452/2drepresentation/1369d96d-e037-478b-a84b-e0a1dbc5c43d> .
+
+    <https://veniss.net/timespan/60a51add-1035-466d-9f51-6c3d60cc4227> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1981-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/316772a7-19b0-4c99-936c-c3f288eaa452/2drepresentation/1369d96d-e037-478b-a84b-e0a1dbc5c43d> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_20.1" .
+
+    # Phase: SSP_BLDG_20
+    <https://veniss.net/presence/7f58a017-6b25-49dd-b4ea-ed8d4cf15e4b> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/f9733717-c901-4436-b357-30a01eeb945b> ;
+      crm:P138i_has_representation <https://veniss.net/presence/7f58a017-6b25-49dd-b4ea-ed8d4cf15e4b/2drepresentation/4c7702ca-b4f6-4338-aab7-244ff0b9fb16> .
+
+    <https://veniss.net/timespan/f9733717-c901-4436-b357-30a01eeb945b> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1982-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/7f58a017-6b25-49dd-b4ea-ed8d4cf15e4b/2drepresentation/4c7702ca-b4f6-4338-aab7-244ff0b9fb16> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_20" .
+
+  }
+}
+
+
+================================================================================
+Building 19/51: SSP_BLDG_37
+Name: Tanks 37
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/85f72d54-d2e4-45bd-97af-516bf539a630> a veniss:Building ;
+      rdfs:label "Tanks" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/dc3d5675-bd06-4f80-a631-2e354d39a1c8> .
+
+    # Identifier
+    <https://veniss.net/builtwork/85f72d54-d2e4-45bd-97af-516bf539a630/identifier/f768e815-c4fc-49af-936c-0d14f2294001> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_37" .
+
+    <https://veniss.net/builtwork/85f72d54-d2e4-45bd-97af-516bf539a630> crm:P1_is_identified_by <https://veniss.net/builtwork/85f72d54-d2e4-45bd-97af-516bf539a630/identifier/f768e815-c4fc-49af-936c-0d14f2294001> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/dc3d5675-bd06-4f80-a631-2e354d39a1c8> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/66f78758-a660-4ca0-8fd3-c7d09ae8bc29> .
+
+    # Phase: SSP_BLDG_37
+    <https://veniss.net/presence/66f78758-a660-4ca0-8fd3-c7d09ae8bc29> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/f3f46569-9014-42a2-9a13-6bee58e1aade> ;
+      crm:P138i_has_representation <https://veniss.net/presence/66f78758-a660-4ca0-8fd3-c7d09ae8bc29/2drepresentation/eff6f1f7-bc6e-4560-b04d-157964d76b95> .
+
+    <https://veniss.net/timespan/f3f46569-9014-42a2-9a13-6bee58e1aade> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/66f78758-a660-4ca0-8fd3-c7d09ae8bc29/2drepresentation/eff6f1f7-bc6e-4560-b04d-157964d76b95> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_37" .
+
+  }
+}
+
+
+================================================================================
+Building 20/51: SSP_BLDG_38
+Name: Tanks 38
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/6a65ebe6-3a8f-437e-b1a0-5e243e63b153> a veniss:Building ;
+      rdfs:label "Tanks" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/0bcd8eb1-202c-47df-b855-315ea7dd391a> .
+
+    # Identifier
+    <https://veniss.net/builtwork/6a65ebe6-3a8f-437e-b1a0-5e243e63b153/identifier/0a27aff1-68ae-4784-b4e5-ad79e1ca49e5> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_38" .
+
+    <https://veniss.net/builtwork/6a65ebe6-3a8f-437e-b1a0-5e243e63b153> crm:P1_is_identified_by <https://veniss.net/builtwork/6a65ebe6-3a8f-437e-b1a0-5e243e63b153/identifier/0a27aff1-68ae-4784-b4e5-ad79e1ca49e5> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/0bcd8eb1-202c-47df-b855-315ea7dd391a> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/2c871700-6757-4428-b43b-830a19276a55> .
+
+    # Phase: SSP_BLDG_38
+    <https://veniss.net/presence/2c871700-6757-4428-b43b-830a19276a55> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/136cbb94-e8c5-4f42-9cbc-06e66445ece2> ;
+      crm:P138i_has_representation <https://veniss.net/presence/2c871700-6757-4428-b43b-830a19276a55/2drepresentation/40c7f553-a230-4a52-98f5-29c2a078b3a7> .
+
+    <https://veniss.net/timespan/136cbb94-e8c5-4f42-9cbc-06e66445ece2> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/2c871700-6757-4428-b43b-830a19276a55/2drepresentation/40c7f553-a230-4a52-98f5-29c2a078b3a7> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_38" .
+
+  }
+}
+
+
+================================================================================
+Building 21/51: SSP_BLDG_39
+Name: Tanks 39
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/142f59ba-a1a5-432f-95d0-b1b6092a2779> a veniss:Building ;
+      rdfs:label "Tanks" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/919e5e03-fc35-4f8e-a20c-fef55e188b62> .
+
+    # Identifier
+    <https://veniss.net/builtwork/142f59ba-a1a5-432f-95d0-b1b6092a2779/identifier/6a960ecd-e58e-4704-9252-170313c088e3> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_39" .
+
+    <https://veniss.net/builtwork/142f59ba-a1a5-432f-95d0-b1b6092a2779> crm:P1_is_identified_by <https://veniss.net/builtwork/142f59ba-a1a5-432f-95d0-b1b6092a2779/identifier/6a960ecd-e58e-4704-9252-170313c088e3> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/919e5e03-fc35-4f8e-a20c-fef55e188b62> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/799a3958-3e92-4d49-8e99-5a7c398dd5ba> .
+
+    # Phase: SSP_BLDG_39
+    <https://veniss.net/presence/799a3958-3e92-4d49-8e99-5a7c398dd5ba> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/7f2124ce-3711-48bd-9dd3-481d2789823b> ;
+      crm:P138i_has_representation <https://veniss.net/presence/799a3958-3e92-4d49-8e99-5a7c398dd5ba/2drepresentation/87d2f654-e601-419c-a623-fb2fd27f2c06> .
+
+    <https://veniss.net/timespan/7f2124ce-3711-48bd-9dd3-481d2789823b> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/799a3958-3e92-4d49-8e99-5a7c398dd5ba/2drepresentation/87d2f654-e601-419c-a623-fb2fd27f2c06> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_39" .
+
+  }
+}
+
+
+================================================================================
+Building 22/51: SSP_BLDG_40
+Name: Dog shelter 40
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/a401c0f5-4033-4c38-98fe-33fe5e199568> a veniss:Building ;
+      rdfs:label "Dog shelter" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/5696c0f7-5b20-4baa-811d-899e826dc06a> .
+
+    # Identifier
+    <https://veniss.net/builtwork/a401c0f5-4033-4c38-98fe-33fe5e199568/identifier/1e58450d-afce-4e9f-a7e2-b0f887f6ec5b> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_40" .
+
+    <https://veniss.net/builtwork/a401c0f5-4033-4c38-98fe-33fe5e199568> crm:P1_is_identified_by <https://veniss.net/builtwork/a401c0f5-4033-4c38-98fe-33fe5e199568/identifier/1e58450d-afce-4e9f-a7e2-b0f887f6ec5b> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/5696c0f7-5b20-4baa-811d-899e826dc06a> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/a6ad30bd-0c4e-47bb-95a7-531a184e99c4> .
+
+    # Phase: SSP_BLDG_40
+    <https://veniss.net/presence/a6ad30bd-0c4e-47bb-95a7-531a184e99c4> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/68d90654-4b6a-4a9f-9775-b85d2fd03561> ;
+      crm:P138i_has_representation <https://veniss.net/presence/a6ad30bd-0c4e-47bb-95a7-531a184e99c4/2drepresentation/886e2bac-7791-456e-b30b-eb7e5cb6c075> .
+
+    <https://veniss.net/timespan/68d90654-4b6a-4a9f-9775-b85d2fd03561> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/a6ad30bd-0c4e-47bb-95a7-531a184e99c4/2drepresentation/886e2bac-7791-456e-b30b-eb7e5cb6c075> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_40" .
+
+  }
+}
+
+
+================================================================================
+Building 23/51: SSP_BLDG_41
+Name: Staircase 41
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/5e849c22-29d5-439c-b49c-d23a49673764> a veniss:Building ;
+      rdfs:label "Staircase" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/2c0afb0f-a4ea-4c47-b7a4-66f05425449b> .
+
+    # Identifier
+    <https://veniss.net/builtwork/5e849c22-29d5-439c-b49c-d23a49673764/identifier/0d8a6968-7278-410c-a4bf-c3ad9034a92c> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_41" .
+
+    <https://veniss.net/builtwork/5e849c22-29d5-439c-b49c-d23a49673764> crm:P1_is_identified_by <https://veniss.net/builtwork/5e849c22-29d5-439c-b49c-d23a49673764/identifier/0d8a6968-7278-410c-a4bf-c3ad9034a92c> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/2c0afb0f-a4ea-4c47-b7a4-66f05425449b> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/131324ed-7db2-417b-a956-f70b7815c4ad> .
+
+    # Phase: SSP_BLDG_41
+    <https://veniss.net/presence/131324ed-7db2-417b-a956-f70b7815c4ad> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/5c19c497-3f0f-4362-949a-09207d7bfc7e> ;
+      crm:P138i_has_representation <https://veniss.net/presence/131324ed-7db2-417b-a956-f70b7815c4ad/2drepresentation/ce5f561c-af49-408a-989f-4cec29bfaee3> .
+
+    <https://veniss.net/timespan/5c19c497-3f0f-4362-949a-09207d7bfc7e> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/131324ed-7db2-417b-a956-f70b7815c4ad/2drepresentation/ce5f561c-af49-408a-989f-4cec29bfaee3> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_41" .
+
+  }
+}
+
+
+================================================================================
+Building 24/51: SSP_BLDG_10
+Name: Artillery position 10
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/5ea63ea3-f515-4fb8-b91f-57d28436c943> a veniss:Building ;
+      rdfs:label "Artillery position" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/ab052319-949a-4818-8bea-10b9116d6a9b> .
+
+    # Identifier
+    <https://veniss.net/builtwork/5ea63ea3-f515-4fb8-b91f-57d28436c943/identifier/82f12bd1-679b-457f-9071-2df64cf9fe96> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_10" .
+
+    <https://veniss.net/builtwork/5ea63ea3-f515-4fb8-b91f-57d28436c943> crm:P1_is_identified_by <https://veniss.net/builtwork/5ea63ea3-f515-4fb8-b91f-57d28436c943/identifier/82f12bd1-679b-457f-9071-2df64cf9fe96> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/ab052319-949a-4818-8bea-10b9116d6a9b> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/4cec9758-f493-4d4c-948c-2c8ea6a0345b> .
+
+    # Phase: SSP_BLDG_10
+    <https://veniss.net/presence/4cec9758-f493-4d4c-948c-2c8ea6a0345b> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/d50d783b-22ed-4c44-ac6f-c6d47e8552fe> ;
+      crm:P138i_has_representation <https://veniss.net/presence/4cec9758-f493-4d4c-948c-2c8ea6a0345b/2drepresentation/aba7170f-0f06-40b5-bbb5-80a2efbea854> .
+
+    <https://veniss.net/timespan/d50d783b-22ed-4c44-ac6f-c6d47e8552fe> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/4cec9758-f493-4d4c-948c-2c8ea6a0345b/2drepresentation/aba7170f-0f06-40b5-bbb5-80a2efbea854> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_10" .
+
+  }
+}
+
+
+================================================================================
+Building 25/51: SSP_BLDG_8
+Name: Artillery position 8
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/df6710a0-d8be-4555-b7f0-9be1294655ab> a veniss:Building ;
+      rdfs:label "Artillery position" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/a76f86b6-68c4-4cf1-9362-7d026c302270> .
+
+    # Identifier
+    <https://veniss.net/builtwork/df6710a0-d8be-4555-b7f0-9be1294655ab/identifier/89fa40ff-3b5f-4564-964c-eb0a2aa04945> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_8" .
+
+    <https://veniss.net/builtwork/df6710a0-d8be-4555-b7f0-9be1294655ab> crm:P1_is_identified_by <https://veniss.net/builtwork/df6710a0-d8be-4555-b7f0-9be1294655ab/identifier/89fa40ff-3b5f-4564-964c-eb0a2aa04945> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/a76f86b6-68c4-4cf1-9362-7d026c302270> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/e01deb91-88b0-41db-91b7-e8005e9a7c55> .
+
+    # Phase: SSP_BLDG_8
+    <https://veniss.net/presence/e01deb91-88b0-41db-91b7-e8005e9a7c55> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/555aa540-09d5-4370-83a2-0c01591f11e1> ;
+      crm:P138i_has_representation <https://veniss.net/presence/e01deb91-88b0-41db-91b7-e8005e9a7c55/2drepresentation/845b254a-39e2-4cc2-827a-66b5d375f9d8> .
+
+    <https://veniss.net/timespan/555aa540-09d5-4370-83a2-0c01591f11e1> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/e01deb91-88b0-41db-91b7-e8005e9a7c55/2drepresentation/845b254a-39e2-4cc2-827a-66b5d375f9d8> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_8" .
+
+  }
+}
+
+
+================================================================================
+Building 26/51: SSP_BLDG_18
+Name: Wellhead 18
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/794c2b78-a076-482d-8662-7302e00d4f00> a veniss:Building ;
+      rdfs:label "Wellhead" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/c90bbc09-9def-4657-975d-1ccb55be43aa> .
+
+    # Identifier
+    <https://veniss.net/builtwork/794c2b78-a076-482d-8662-7302e00d4f00/identifier/616eef4e-f1ae-4a16-bf08-383024e6fa1f> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_18" .
+
+    <https://veniss.net/builtwork/794c2b78-a076-482d-8662-7302e00d4f00> crm:P1_is_identified_by <https://veniss.net/builtwork/794c2b78-a076-482d-8662-7302e00d4f00/identifier/616eef4e-f1ae-4a16-bf08-383024e6fa1f> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/c90bbc09-9def-4657-975d-1ccb55be43aa> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/e1d48b12-2322-49d2-8597-600997d67cbd> .
+
+    # Phase: SSP_BLDG_18
+    <https://veniss.net/presence/e1d48b12-2322-49d2-8597-600997d67cbd> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/9c439cc3-a865-498d-b608-98b5b6f4f0eb> ;
+      crm:P138i_has_representation <https://veniss.net/presence/e1d48b12-2322-49d2-8597-600997d67cbd/2drepresentation/b64390ab-e8a9-4f50-8ce1-e9460a60be87> .
+
+    <https://veniss.net/timespan/9c439cc3-a865-498d-b608-98b5b6f4f0eb> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/e1d48b12-2322-49d2-8597-600997d67cbd/2drepresentation/b64390ab-e8a9-4f50-8ce1-e9460a60be87> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_18" .
+
+  }
+}
+
+
+================================================================================
+Building 27/51: SSP_BLDG_22
+Name: Church staircase west 22
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/b13ac05c-3e03-4869-9f4a-c21fa765b014> a veniss:Building ;
+      rdfs:label "Church staircase west" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/7c72e2a4-c023-4cfc-9259-750e0bc70be2> .
+
+    # Identifier
+    <https://veniss.net/builtwork/b13ac05c-3e03-4869-9f4a-c21fa765b014/identifier/72c7aca2-6f75-49c8-baee-d7a49487c317> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_22" .
+
+    <https://veniss.net/builtwork/b13ac05c-3e03-4869-9f4a-c21fa765b014> crm:P1_is_identified_by <https://veniss.net/builtwork/b13ac05c-3e03-4869-9f4a-c21fa765b014/identifier/72c7aca2-6f75-49c8-baee-d7a49487c317> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/7c72e2a4-c023-4cfc-9259-750e0bc70be2> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/ec7eaf08-9185-4f6e-8650-e08dbeb1e013> .
+
+    # Phase: SSP_BLDG_22
+    <https://veniss.net/presence/ec7eaf08-9185-4f6e-8650-e08dbeb1e013> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/51e3c47c-82dc-49b4-be71-fe9ed769f7e7> ;
+      crm:P138i_has_representation <https://veniss.net/presence/ec7eaf08-9185-4f6e-8650-e08dbeb1e013/2drepresentation/1ac457f5-f447-4966-902c-8a6dbcc82b22> .
+
+    <https://veniss.net/timespan/51e3c47c-82dc-49b4-be71-fe9ed769f7e7> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/ec7eaf08-9185-4f6e-8650-e08dbeb1e013/2drepresentation/1ac457f5-f447-4966-902c-8a6dbcc82b22> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_22" .
+
+  }
+}
+
+
+================================================================================
+Building 28/51: SSP_BLDG_23
+Name: Church staircase east 23
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/8046a3c2-52e1-4631-a926-b5f7d74841f2> a veniss:Building ;
+      rdfs:label "Church staircase east" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/87691d1b-300a-42c2-802c-b6a21762203f> .
+
+    # Identifier
+    <https://veniss.net/builtwork/8046a3c2-52e1-4631-a926-b5f7d74841f2/identifier/aa371468-e081-4088-929b-8af4e6881613> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_23" .
+
+    <https://veniss.net/builtwork/8046a3c2-52e1-4631-a926-b5f7d74841f2> crm:P1_is_identified_by <https://veniss.net/builtwork/8046a3c2-52e1-4631-a926-b5f7d74841f2/identifier/aa371468-e081-4088-929b-8af4e6881613> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/87691d1b-300a-42c2-802c-b6a21762203f> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/d6ec74f8-cd1c-47f0-8063-512b401c9e4b> .
+
+    # Phase: SSP_BLDG_23
+    <https://veniss.net/presence/d6ec74f8-cd1c-47f0-8063-512b401c9e4b> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/2347a1a0-11ba-4653-86b0-e51101bad323> ;
+      crm:P138i_has_representation <https://veniss.net/presence/d6ec74f8-cd1c-47f0-8063-512b401c9e4b/2drepresentation/420e925e-3b2f-410c-a841-076eeaf12ea2> .
+
+    <https://veniss.net/timespan/2347a1a0-11ba-4653-86b0-e51101bad323> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/d6ec74f8-cd1c-47f0-8063-512b401c9e4b/2drepresentation/420e925e-3b2f-410c-a841-076eeaf12ea2> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_23" .
+
+  }
+}
+
+
+================================================================================
+Building 29/51: SSP_BLDG_24
+Name: Bunker staircase 24
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/a951e9f4-1d13-4162-b160-7a754a390c18> a veniss:Building ;
+      rdfs:label "Bunker staircase" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/15b0f980-de42-462c-8ac9-f3da59784431> .
+
+    # Identifier
+    <https://veniss.net/builtwork/a951e9f4-1d13-4162-b160-7a754a390c18/identifier/13284dbb-ec33-45c5-a27e-521879efee4e> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_24" .
+
+    <https://veniss.net/builtwork/a951e9f4-1d13-4162-b160-7a754a390c18> crm:P1_is_identified_by <https://veniss.net/builtwork/a951e9f4-1d13-4162-b160-7a754a390c18/identifier/13284dbb-ec33-45c5-a27e-521879efee4e> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/15b0f980-de42-462c-8ac9-f3da59784431> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/56133834-f8ed-4321-93d8-6f13d570e340> .
+
+    # Phase: SSP_BLDG_24
+    <https://veniss.net/presence/56133834-f8ed-4321-93d8-6f13d570e340> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/a56655b5-7ae7-49c9-a22a-6638bfdc1050> ;
+      crm:P138i_has_representation <https://veniss.net/presence/56133834-f8ed-4321-93d8-6f13d570e340/2drepresentation/42c9cf14-81dc-4335-8e10-f3f58bc81d1f> .
+
+    <https://veniss.net/timespan/a56655b5-7ae7-49c9-a22a-6638bfdc1050> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/56133834-f8ed-4321-93d8-6f13d570e340/2drepresentation/42c9cf14-81dc-4335-8e10-f3f58bc81d1f> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_24" .
+
+  }
+}
+
+
+================================================================================
+Building 30/51: SSP_BLDG_25
+Name: Wooden barrack 25
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/37201c4b-f3e8-4c86-8498-04214d573ef2> a veniss:Building ;
+      rdfs:label "Wooden barrack" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/6da1858c-e461-404b-bdf9-1a6d4a9dbb83> .
+
+    # Identifier
+    <https://veniss.net/builtwork/37201c4b-f3e8-4c86-8498-04214d573ef2/identifier/1d6f4921-49a5-4561-bf7f-dfcc2f9289c5> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_25" .
+
+    <https://veniss.net/builtwork/37201c4b-f3e8-4c86-8498-04214d573ef2> crm:P1_is_identified_by <https://veniss.net/builtwork/37201c4b-f3e8-4c86-8498-04214d573ef2/identifier/1d6f4921-49a5-4561-bf7f-dfcc2f9289c5> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/6da1858c-e461-404b-bdf9-1a6d4a9dbb83> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/3e6bbc0e-f9da-4f53-a2ec-466ae32a79f1> .
+
+    # Phase: SSP_BLDG_25
+    <https://veniss.net/presence/3e6bbc0e-f9da-4f53-a2ec-466ae32a79f1> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/8d03f232-1bf8-4d75-8f01-669e1d6bf864> ;
+      crm:P138i_has_representation <https://veniss.net/presence/3e6bbc0e-f9da-4f53-a2ec-466ae32a79f1/2drepresentation/f28ed3a9-51b2-41bd-ac66-a327c9d7dd1d> .
+
+    <https://veniss.net/timespan/8d03f232-1bf8-4d75-8f01-669e1d6bf864> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/3e6bbc0e-f9da-4f53-a2ec-466ae32a79f1/2drepresentation/f28ed3a9-51b2-41bd-ac66-a327c9d7dd1d> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_25" .
+
+  }
+}
+
+
+================================================================================
+Building 31/51: SSP_BLDG_26
+Name: Wooden warehouse 26
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/3b383b28-b049-45c4-9422-3e3dafd03e0d> a veniss:Building ;
+      rdfs:label "Wooden warehouse" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/6da3591c-d955-4514-b568-5624d9dc428f> .
+
+    # Identifier
+    <https://veniss.net/builtwork/3b383b28-b049-45c4-9422-3e3dafd03e0d/identifier/7a82f5df-fd07-4ea2-9307-4799660994dd> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_26" .
+
+    <https://veniss.net/builtwork/3b383b28-b049-45c4-9422-3e3dafd03e0d> crm:P1_is_identified_by <https://veniss.net/builtwork/3b383b28-b049-45c4-9422-3e3dafd03e0d/identifier/7a82f5df-fd07-4ea2-9307-4799660994dd> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/6da3591c-d955-4514-b568-5624d9dc428f> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/4f7c972f-fd67-497d-be49-6ec55459bbdd> .
+
+    # Phase: SSP_BLDG_26
+    <https://veniss.net/presence/4f7c972f-fd67-497d-be49-6ec55459bbdd> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/251a087b-b894-40bd-97ab-50a21dd5eb2c> ;
+      crm:P138i_has_representation <https://veniss.net/presence/4f7c972f-fd67-497d-be49-6ec55459bbdd/2drepresentation/aae62dda-a4db-45ea-9055-97091a29e3a4> .
+
+    <https://veniss.net/timespan/251a087b-b894-40bd-97ab-50a21dd5eb2c> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/4f7c972f-fd67-497d-be49-6ec55459bbdd/2drepresentation/aae62dda-a4db-45ea-9055-97091a29e3a4> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_26" .
+
+  }
+}
+
+
+================================================================================
+Building 32/51: SSP_BLDG_27
+Name: Storage room 27
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/117a6109-b6fb-4f58-9a0b-0a30c8850a4c> a veniss:Building ;
+      rdfs:label "Storage room" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/1c6ff026-69ba-48d8-9c75-31005bb37d36> .
+
+    # Identifier
+    <https://veniss.net/builtwork/117a6109-b6fb-4f58-9a0b-0a30c8850a4c/identifier/43a19634-4c47-4e7b-a984-72ca3ffc9ac0> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_27" .
+
+    <https://veniss.net/builtwork/117a6109-b6fb-4f58-9a0b-0a30c8850a4c> crm:P1_is_identified_by <https://veniss.net/builtwork/117a6109-b6fb-4f58-9a0b-0a30c8850a4c/identifier/43a19634-4c47-4e7b-a984-72ca3ffc9ac0> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/1c6ff026-69ba-48d8-9c75-31005bb37d36> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/61303e16-aa54-43d4-bd90-e42d322b320a> .
+
+    # Phase: SSP_BLDG_27
+    <https://veniss.net/presence/61303e16-aa54-43d4-bd90-e42d322b320a> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/dc9a3f0d-301f-4dfd-a073-1fcfdbfecd69> ;
+      crm:P138i_has_representation <https://veniss.net/presence/61303e16-aa54-43d4-bd90-e42d322b320a/2drepresentation/b5dc40a9-ff81-4e17-948e-15d360142631> .
+
+    <https://veniss.net/timespan/dc9a3f0d-301f-4dfd-a073-1fcfdbfecd69> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/61303e16-aa54-43d4-bd90-e42d322b320a/2drepresentation/b5dc40a9-ff81-4e17-948e-15d360142631> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_27" .
+
+  }
+}
+
+
+================================================================================
+Building 33/51: SSP_BLDG_29
+Name: Monastery staircase 29
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/bbab92dc-8328-4bdc-b1d4-a1d747159c83> a veniss:Building ;
+      rdfs:label "Monastery staircase" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/55dbfb5e-ee70-4073-8d19-08b8cc9ccc4a> .
+
+    # Identifier
+    <https://veniss.net/builtwork/bbab92dc-8328-4bdc-b1d4-a1d747159c83/identifier/257cc271-f57d-404d-9942-7317d76b33a0> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_29" .
+
+    <https://veniss.net/builtwork/bbab92dc-8328-4bdc-b1d4-a1d747159c83> crm:P1_is_identified_by <https://veniss.net/builtwork/bbab92dc-8328-4bdc-b1d4-a1d747159c83/identifier/257cc271-f57d-404d-9942-7317d76b33a0> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/55dbfb5e-ee70-4073-8d19-08b8cc9ccc4a> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/2e5de95d-3609-4501-98da-b829d90becff> .
+
+    # Phase: SSP_BLDG_29
+    <https://veniss.net/presence/2e5de95d-3609-4501-98da-b829d90becff> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/7005fb5a-c857-4cb7-80dc-014ef43b8421> ;
+      crm:P138i_has_representation <https://veniss.net/presence/2e5de95d-3609-4501-98da-b829d90becff/2drepresentation/72c11e8b-dc1d-46f7-8801-29899404829b> .
+
+    <https://veniss.net/timespan/7005fb5a-c857-4cb7-80dc-014ef43b8421> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/2e5de95d-3609-4501-98da-b829d90becff/2drepresentation/72c11e8b-dc1d-46f7-8801-29899404829b> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_29" .
+
+  }
+}
+
+
+================================================================================
+Building 34/51: SSP_BLDG_30
+Name: Storage room 30
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/59f5929c-de8c-48df-aaf2-7cadbea30c27> a veniss:Building ;
+      rdfs:label "Storage room" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/8e4183ca-595c-4b85-8f05-17f99a989895> .
+
+    # Identifier
+    <https://veniss.net/builtwork/59f5929c-de8c-48df-aaf2-7cadbea30c27/identifier/6f8db8b0-93ad-4511-b4f9-460ded3b620c> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_30" .
+
+    <https://veniss.net/builtwork/59f5929c-de8c-48df-aaf2-7cadbea30c27> crm:P1_is_identified_by <https://veniss.net/builtwork/59f5929c-de8c-48df-aaf2-7cadbea30c27/identifier/6f8db8b0-93ad-4511-b4f9-460ded3b620c> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/8e4183ca-595c-4b85-8f05-17f99a989895> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/b14472e9-e8e1-4ff1-be16-cc4f9643a5e1> .
+
+    # Phase: SSP_BLDG_30
+    <https://veniss.net/presence/b14472e9-e8e1-4ff1-be16-cc4f9643a5e1> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/5d72dcc7-945f-456b-9829-ff08eb22f2c4> ;
+      crm:P138i_has_representation <https://veniss.net/presence/b14472e9-e8e1-4ff1-be16-cc4f9643a5e1/2drepresentation/afa34544-3947-492f-9eaa-b748e08554bc> .
+
+    <https://veniss.net/timespan/5d72dcc7-945f-456b-9829-ff08eb22f2c4> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/b14472e9-e8e1-4ff1-be16-cc4f9643a5e1/2drepresentation/afa34544-3947-492f-9eaa-b748e08554bc> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_30" .
+
+  }
+}
+
+
+================================================================================
+Building 35/51: SSP_BLDG_31
+Name: Boathouse staircase 31
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/f6e814b6-9f60-4391-8eda-d9e2b7e9581f> a veniss:Building ;
+      rdfs:label "Boathouse staircase" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/51c971b7-c9ae-4a1e-8821-e07957a6e985> .
+
+    # Identifier
+    <https://veniss.net/builtwork/f6e814b6-9f60-4391-8eda-d9e2b7e9581f/identifier/7ce54c6d-2cfb-466d-874e-76c34f1b684b> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_31" .
+
+    <https://veniss.net/builtwork/f6e814b6-9f60-4391-8eda-d9e2b7e9581f> crm:P1_is_identified_by <https://veniss.net/builtwork/f6e814b6-9f60-4391-8eda-d9e2b7e9581f/identifier/7ce54c6d-2cfb-466d-874e-76c34f1b684b> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/51c971b7-c9ae-4a1e-8821-e07957a6e985> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/11b05c88-e744-4305-b56b-d711f7d58415> .
+
+    # Phase: SSP_BLDG_31
+    <https://veniss.net/presence/11b05c88-e744-4305-b56b-d711f7d58415> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/ec347a03-5399-4e18-86b1-477c514f1e83> ;
+      crm:P138i_has_representation <https://veniss.net/presence/11b05c88-e744-4305-b56b-d711f7d58415/2drepresentation/5d1b02d1-7369-472e-b868-35598f5a18ea> .
+
+    <https://veniss.net/timespan/ec347a03-5399-4e18-86b1-477c514f1e83> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/11b05c88-e744-4305-b56b-d711f7d58415/2drepresentation/5d1b02d1-7369-472e-b868-35598f5a18ea> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_31" .
+
+  }
+}
+
+
+================================================================================
+Building 36/51: SSP_BLDG_32
+Name: Anti-aircraft battery
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/97543659-5c3e-469a-835c-71f6ed29ae9e> a veniss:Building ;
+      rdfs:label "Antiaircraft battery" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/c6ce4987-01b5-480c-a331-81a5d92cadc2> .
+
+    # Identifier
+    <https://veniss.net/builtwork/97543659-5c3e-469a-835c-71f6ed29ae9e/identifier/ac242400-2ca9-438e-be8b-9e0bf9205da5> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_32" .
+
+    <https://veniss.net/builtwork/97543659-5c3e-469a-835c-71f6ed29ae9e> crm:P1_is_identified_by <https://veniss.net/builtwork/97543659-5c3e-469a-835c-71f6ed29ae9e/identifier/ac242400-2ca9-438e-be8b-9e0bf9205da5> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/c6ce4987-01b5-480c-a331-81a5d92cadc2> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/55e62b64-51ac-4c43-910b-3618bd17e365> .
+
+    # Phase: SSP_BLDG_32
+    <https://veniss.net/presence/55e62b64-51ac-4c43-910b-3618bd17e365> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/b91c920f-447d-4a1c-b007-ac15dde85c03> ;
+      crm:P138i_has_representation <https://veniss.net/presence/55e62b64-51ac-4c43-910b-3618bd17e365/2drepresentation/2e55850b-89fb-4eb4-b4fa-80c71841349f> .
+
+    <https://veniss.net/timespan/b91c920f-447d-4a1c-b007-ac15dde85c03> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/55e62b64-51ac-4c43-910b-3618bd17e365/2drepresentation/2e55850b-89fb-4eb4-b4fa-80c71841349f> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_32" .
+
+  }
+}
+
+
+================================================================================
+Building 37/51: SSP_BLDG_33
+Name: Military storage room 33
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/a8296c0e-8ec2-4c78-b4cc-202f63c0d900> a veniss:Building ;
+      rdfs:label "Military storage room" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/09a5a4fa-0331-4eb2-b1e0-145e84f79453> .
+
+    # Identifier
+    <https://veniss.net/builtwork/a8296c0e-8ec2-4c78-b4cc-202f63c0d900/identifier/48cdbd57-6bf4-4e3e-bdd6-766c76dc14ba> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_33" .
+
+    <https://veniss.net/builtwork/a8296c0e-8ec2-4c78-b4cc-202f63c0d900> crm:P1_is_identified_by <https://veniss.net/builtwork/a8296c0e-8ec2-4c78-b4cc-202f63c0d900/identifier/48cdbd57-6bf4-4e3e-bdd6-766c76dc14ba> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/09a5a4fa-0331-4eb2-b1e0-145e84f79453> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/b3b47043-0d91-4717-af35-7807daa52526> .
+
+    # Phase: SSP_BLDG_33
+    <https://veniss.net/presence/b3b47043-0d91-4717-af35-7807daa52526> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/37b7f71f-aa14-4aec-94b7-ba6b603ac349> ;
+      crm:P138i_has_representation <https://veniss.net/presence/b3b47043-0d91-4717-af35-7807daa52526/2drepresentation/12a7a2e7-b84f-4c9e-a82c-7feaec9db363> .
+
+    <https://veniss.net/timespan/37b7f71f-aa14-4aec-94b7-ba6b603ac349> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/b3b47043-0d91-4717-af35-7807daa52526/2drepresentation/12a7a2e7-b84f-4c9e-a82c-7feaec9db363> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_33" .
+
+  }
+}
+
+
+================================================================================
+Building 38/51: SSP_BLDG_34
+Name: Artillery position 34
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/648eb719-7989-4679-83ba-1cd931aac8f3> a veniss:Building ;
+      rdfs:label "Artillery position" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/974fca8d-80ad-46af-acb0-5f7ff5a64874> .
+
+    # Identifier
+    <https://veniss.net/builtwork/648eb719-7989-4679-83ba-1cd931aac8f3/identifier/1f330daa-426e-43e8-b4b4-7cd942b469c8> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_34" .
+
+    <https://veniss.net/builtwork/648eb719-7989-4679-83ba-1cd931aac8f3> crm:P1_is_identified_by <https://veniss.net/builtwork/648eb719-7989-4679-83ba-1cd931aac8f3/identifier/1f330daa-426e-43e8-b4b4-7cd942b469c8> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/974fca8d-80ad-46af-acb0-5f7ff5a64874> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/82357031-58bb-4a4b-8414-61baa68cb93a> .
+
+    # Phase: SSP_BLDG_34
+    <https://veniss.net/presence/82357031-58bb-4a4b-8414-61baa68cb93a> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/03945907-148e-48e0-9e51-7d79b27b0829> ;
+      crm:P138i_has_representation <https://veniss.net/presence/82357031-58bb-4a4b-8414-61baa68cb93a/2drepresentation/e51cbe1c-dbc9-4301-aba0-fd19c4950d1b> .
+
+    <https://veniss.net/timespan/03945907-148e-48e0-9e51-7d79b27b0829> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/82357031-58bb-4a4b-8414-61baa68cb93a/2drepresentation/e51cbe1c-dbc9-4301-aba0-fd19c4950d1b> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_34" .
+
+  }
+}
+
+
+================================================================================
+Building 39/51: SSP_BLDG_36
+Name: Monastery staircase north 36
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/d87493af-81cb-4441-9409-93f340bbf432> a veniss:Building ;
+      rdfs:label "Monastery staircase north" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/25aa29c6-7ff4-4b92-be67-213b5eba632a> .
+
+    # Identifier
+    <https://veniss.net/builtwork/d87493af-81cb-4441-9409-93f340bbf432/identifier/edb37024-6f7e-4732-9cab-190c6c5afb63> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_36" .
+
+    <https://veniss.net/builtwork/d87493af-81cb-4441-9409-93f340bbf432> crm:P1_is_identified_by <https://veniss.net/builtwork/d87493af-81cb-4441-9409-93f340bbf432/identifier/edb37024-6f7e-4732-9cab-190c6c5afb63> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/25aa29c6-7ff4-4b92-be67-213b5eba632a> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/dfc916b8-321d-450a-bcf3-f1e8e1f3f3ba> .
+
+    # Phase: SSP_BLDG_36
+    <https://veniss.net/presence/dfc916b8-321d-450a-bcf3-f1e8e1f3f3ba> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/1466f7e7-990a-4d2d-bb64-7ebfc5becb5d> ;
+      crm:P138i_has_representation <https://veniss.net/presence/dfc916b8-321d-450a-bcf3-f1e8e1f3f3ba/2drepresentation/6cb0e8d1-5200-4c8c-b81c-4bf9ba4dea8b> .
+
+    <https://veniss.net/timespan/1466f7e7-990a-4d2d-bb64-7ebfc5becb5d> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/dfc916b8-321d-450a-bcf3-f1e8e1f3f3ba/2drepresentation/6cb0e8d1-5200-4c8c-b81c-4bf9ba4dea8b> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_36" .
+
+  }
+}
+
+
+================================================================================
+Building 40/51: SSP_BLDG_28
+Name: Chicken coop 28
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/d41edbab-cf34-4eee-9fb5-b879a07d5ab6> a veniss:Building ;
+      rdfs:label "Chicken coop" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/c8cbcd0a-3ab1-4c3e-b23d-05742f69cf08> .
+
+    # Identifier
+    <https://veniss.net/builtwork/d41edbab-cf34-4eee-9fb5-b879a07d5ab6/identifier/dfdae01c-2de0-428d-8f52-661f33bab100> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_28" .
+
+    <https://veniss.net/builtwork/d41edbab-cf34-4eee-9fb5-b879a07d5ab6> crm:P1_is_identified_by <https://veniss.net/builtwork/d41edbab-cf34-4eee-9fb5-b879a07d5ab6/identifier/dfdae01c-2de0-428d-8f52-661f33bab100> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/c8cbcd0a-3ab1-4c3e-b23d-05742f69cf08> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/33f6064f-dd62-4b87-bcf9-1318c67d6116> .
+
+    # Phase: SSP_BLDG_28
+    <https://veniss.net/presence/33f6064f-dd62-4b87-bcf9-1318c67d6116> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/af6aa173-3a04-457d-b240-9af05175cb3e> ;
+      crm:P138i_has_representation <https://veniss.net/presence/33f6064f-dd62-4b87-bcf9-1318c67d6116/2drepresentation/e5c0e557-d158-40ed-ad09-ff88e2357770> .
+
+    <https://veniss.net/timespan/af6aa173-3a04-457d-b240-9af05175cb3e> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/33f6064f-dd62-4b87-bcf9-1318c67d6116/2drepresentation/e5c0e557-d158-40ed-ad09-ff88e2357770> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_28" .
+
+  }
+}
+
+
+================================================================================
+Building 41/51: SSP_BLDG_35
+Name: Wellhead steps 35
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/9928d03c-4492-437b-b3d9-4260f8a82346> a veniss:Building ;
+      rdfs:label "Wellhead steps" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/38a0aecd-e996-4717-aa8f-8ee876dabf4b> .
+
+    # Identifier
+    <https://veniss.net/builtwork/9928d03c-4492-437b-b3d9-4260f8a82346/identifier/5cb44ac0-bde9-423d-b097-b74575d8e3dc> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_35" .
+
+    <https://veniss.net/builtwork/9928d03c-4492-437b-b3d9-4260f8a82346> crm:P1_is_identified_by <https://veniss.net/builtwork/9928d03c-4492-437b-b3d9-4260f8a82346/identifier/5cb44ac0-bde9-423d-b097-b74575d8e3dc> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/38a0aecd-e996-4717-aa8f-8ee876dabf4b> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/407e348b-dfe5-4a06-b3c9-674bbbf78288> .
+
+    # Phase: SSP_BLDG_35
+    <https://veniss.net/presence/407e348b-dfe5-4a06-b3c9-674bbbf78288> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/daa1f4f6-c28f-426b-9228-f58e2441492f> ;
+      crm:P138i_has_representation <https://veniss.net/presence/407e348b-dfe5-4a06-b3c9-674bbbf78288/2drepresentation/f1210be2-2db1-465e-9f6b-f7eeef76fdba> .
+
+    <https://veniss.net/timespan/daa1f4f6-c28f-426b-9228-f58e2441492f> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1841-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/407e348b-dfe5-4a06-b3c9-674bbbf78288/2drepresentation/f1210be2-2db1-465e-9f6b-f7eeef76fdba> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_35" .
+
+  }
+}
+
+
+================================================================================
+Building 42/51: SSP_BLDG_47
+Name: Monastery walls 47
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/8f690b0f-57f8-4bae-88e0-90a81ade2381> a veniss:Building ;
+      rdfs:label "Monastery walls" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/588632bd-8564-4b65-a293-0ef5e2104483> .
+
+    # Identifier
+    <https://veniss.net/builtwork/8f690b0f-57f8-4bae-88e0-90a81ade2381/identifier/51cd872c-adf9-427a-baff-61b6199229b4> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_47" .
+
+    <https://veniss.net/builtwork/8f690b0f-57f8-4bae-88e0-90a81ade2381> crm:P1_is_identified_by <https://veniss.net/builtwork/8f690b0f-57f8-4bae-88e0-90a81ade2381/identifier/51cd872c-adf9-427a-baff-61b6199229b4> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/588632bd-8564-4b65-a293-0ef5e2104483> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/bec55af1-1d91-4c07-8b20-beecc83c68b1> .
+
+    # Phase: SSP_BLDG_47
+    <https://veniss.net/presence/bec55af1-1d91-4c07-8b20-beecc83c68b1> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/5b846076-3753-4632-82d7-782984982cad> ;
+      crm:P138i_has_representation <https://veniss.net/presence/bec55af1-1d91-4c07-8b20-beecc83c68b1/2drepresentation/e9f7869e-0701-44d4-8770-f6c96f6e1805> .
+
+    <https://veniss.net/timespan/5b846076-3753-4632-82d7-782984982cad> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/bec55af1-1d91-4c07-8b20-beecc83c68b1/2drepresentation/e9f7869e-0701-44d4-8770-f6c96f6e1805> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_47" .
+
+  }
+}
+
+
+================================================================================
+Building 43/51: SSP_BLDG_48
+Name: Church walls 48
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/e4696864-d6a5-4ec8-ac19-271656ec03c6> a veniss:Building ;
+      rdfs:label "Church walls" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/061bce66-fc04-47c2-9cfe-fea3f0e6a1a3> .
+
+    # Identifier
+    <https://veniss.net/builtwork/e4696864-d6a5-4ec8-ac19-271656ec03c6/identifier/6c3d93cd-7f98-4fed-8875-1f7837754b1a> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_48" .
+
+    <https://veniss.net/builtwork/e4696864-d6a5-4ec8-ac19-271656ec03c6> crm:P1_is_identified_by <https://veniss.net/builtwork/e4696864-d6a5-4ec8-ac19-271656ec03c6/identifier/6c3d93cd-7f98-4fed-8875-1f7837754b1a> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/061bce66-fc04-47c2-9cfe-fea3f0e6a1a3> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/afb4e92c-6980-4a2c-9356-8e77a5f784c1> .
+
+    # Phase: SSP_BLDG_48
+    <https://veniss.net/presence/afb4e92c-6980-4a2c-9356-8e77a5f784c1> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/23715312-b012-414b-937d-a8c601038923> ;
+      crm:P138i_has_representation <https://veniss.net/presence/afb4e92c-6980-4a2c-9356-8e77a5f784c1/2drepresentation/2281c36b-f037-4428-8b8c-66105e8fe633> .
+
+    <https://veniss.net/timespan/23715312-b012-414b-937d-a8c601038923> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/afb4e92c-6980-4a2c-9356-8e77a5f784c1/2drepresentation/2281c36b-f037-4428-8b8c-66105e8fe633> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_48" .
+
+  }
+}
+
+
+================================================================================
+Building 44/51: SSP_BLDG_49
+Name: Wall to the church 49
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/8694c4d9-5328-4ac7-afb6-415943e5f66c> a veniss:Building ;
+      rdfs:label "Wall to the church" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/333d7fe4-d422-4a67-a93e-f3d35344388d> .
+
+    # Identifier
+    <https://veniss.net/builtwork/8694c4d9-5328-4ac7-afb6-415943e5f66c/identifier/6622283a-866c-4fb3-a3a3-0e61c738e38d> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_49" .
+
+    <https://veniss.net/builtwork/8694c4d9-5328-4ac7-afb6-415943e5f66c> crm:P1_is_identified_by <https://veniss.net/builtwork/8694c4d9-5328-4ac7-afb6-415943e5f66c/identifier/6622283a-866c-4fb3-a3a3-0e61c738e38d> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/333d7fe4-d422-4a67-a93e-f3d35344388d> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/0265e006-941f-4dc2-93f7-d82f553b0559> .
+
+    # Phase: SSP_BLDG_49
+    <https://veniss.net/presence/0265e006-941f-4dc2-93f7-d82f553b0559> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/af3f98ae-3624-4b70-833e-c652a3a3cf00> ;
+      crm:P138i_has_representation <https://veniss.net/presence/0265e006-941f-4dc2-93f7-d82f553b0559/2drepresentation/16802abe-8d9e-47ac-8c00-e1866f66f9b6> .
+
+    <https://veniss.net/timespan/af3f98ae-3624-4b70-833e-c652a3a3cf00> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/0265e006-941f-4dc2-93f7-d82f553b0559/2drepresentation/16802abe-8d9e-47ac-8c00-e1866f66f9b6> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_49" .
+
+  }
+}
+
+
+================================================================================
+Building 45/51: SSP_BLDG_45
+Name: Dock 45.1
+Number of phases: 2
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/8bfe548a-fca5-49fe-b7b2-28e477549f1d> a veniss:Building ;
+      rdfs:label "Dock" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/f8557b56-eca3-4313-a9ba-fae84030f2ec> .
+
+    # Identifier
+    <https://veniss.net/builtwork/8bfe548a-fca5-49fe-b7b2-28e477549f1d/identifier/1dcc0485-6e73-4759-b8c3-b4a14cbc01ac> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_45" .
+
+    <https://veniss.net/builtwork/8bfe548a-fca5-49fe-b7b2-28e477549f1d> crm:P1_is_identified_by <https://veniss.net/builtwork/8bfe548a-fca5-49fe-b7b2-28e477549f1d/identifier/1dcc0485-6e73-4759-b8c3-b4a14cbc01ac> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/f8557b56-eca3-4313-a9ba-fae84030f2ec> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/db57cd04-5c05-4397-8d09-c1f8342f97c8>,
+        <https://veniss.net/presence/66a4afc5-5009-4bbe-872f-e3ae3b1d8695> .
+
+    # Phase: SSP_BLDG_45.1
+    <https://veniss.net/presence/db57cd04-5c05-4397-8d09-c1f8342f97c8> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/da88e93c-7bd8-42a1-afce-f55064b6ec5f> ;
+      crm:P138i_has_representation <https://veniss.net/presence/db57cd04-5c05-4397-8d09-c1f8342f97c8/2drepresentation/c0b9713a-bbd4-49be-95a3-5398bd854faa> .
+
+    <https://veniss.net/timespan/da88e93c-7bd8-42a1-afce-f55064b6ec5f> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      ; crm:P82b_end_of_the_end "1930-12-31"^^xsd:date
+      .
+
+    <https://veniss.net/presence/db57cd04-5c05-4397-8d09-c1f8342f97c8/2drepresentation/c0b9713a-bbd4-49be-95a3-5398bd854faa> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_45.1" .
+
+    # Phase: SSP_BLDG_45
+    <https://veniss.net/presence/66a4afc5-5009-4bbe-872f-e3ae3b1d8695> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/f1c7c12f-658e-44a1-b640-112d140cf664> ;
+      crm:P138i_has_representation <https://veniss.net/presence/66a4afc5-5009-4bbe-872f-e3ae3b1d8695/2drepresentation/079773e0-a28a-4a45-a4ea-25eecddcc371> .
+
+    <https://veniss.net/timespan/f1c7c12f-658e-44a1-b640-112d140cf664> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/66a4afc5-5009-4bbe-872f-e3ae3b1d8695/2drepresentation/079773e0-a28a-4a45-a4ea-25eecddcc371> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_45" .
+
+  }
+}
+
+
+================================================================================
+Building 46/51: SSP_BLDG_50
+Name: Monastery dock 50
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/d14ad85d-c581-4b44-821d-6ede03127409> a veniss:Building ;
+      rdfs:label "Monastery dock" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/a1bbd37e-017f-4a5f-ba8d-7aa7861f519f> .
+
+    # Identifier
+    <https://veniss.net/builtwork/d14ad85d-c581-4b44-821d-6ede03127409/identifier/1cfb9866-2f40-4509-bd02-e004bb68222f> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_50" .
+
+    <https://veniss.net/builtwork/d14ad85d-c581-4b44-821d-6ede03127409> crm:P1_is_identified_by <https://veniss.net/builtwork/d14ad85d-c581-4b44-821d-6ede03127409/identifier/1cfb9866-2f40-4509-bd02-e004bb68222f> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/a1bbd37e-017f-4a5f-ba8d-7aa7861f519f> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/3e7e00bd-12da-4d04-ba5e-92feea8751d1> .
+
+    # Phase: SSP_BLDG_50
+    <https://veniss.net/presence/3e7e00bd-12da-4d04-ba5e-92feea8751d1> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/e4980ca0-1627-4477-8c89-4b943fbd3bbc> ;
+      crm:P138i_has_representation <https://veniss.net/presence/3e7e00bd-12da-4d04-ba5e-92feea8751d1/2drepresentation/3a140403-007e-4ef0-970b-36f41ee292c1> .
+
+    <https://veniss.net/timespan/e4980ca0-1627-4477-8c89-4b943fbd3bbc> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/3e7e00bd-12da-4d04-ba5e-92feea8751d1/2drepresentation/3a140403-007e-4ef0-970b-36f41ee292c1> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_50" .
+
+  }
+}
+
+
+================================================================================
+Building 47/51: SSP_BLDG_51
+Name: Gunpowder tower wall
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/308025f4-a3ef-4538-936d-c8f065d0181f> a veniss:Building ;
+      rdfs:label "Gunpowder tower wall" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/91e5f5f2-4fbb-4980-aaeb-f2f3a064a1d5> .
+
+    # Identifier
+    <https://veniss.net/builtwork/308025f4-a3ef-4538-936d-c8f065d0181f/identifier/bf830563-6571-421f-b4e8-4b95652bf226> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_51" .
+
+    <https://veniss.net/builtwork/308025f4-a3ef-4538-936d-c8f065d0181f> crm:P1_is_identified_by <https://veniss.net/builtwork/308025f4-a3ef-4538-936d-c8f065d0181f/identifier/bf830563-6571-421f-b4e8-4b95652bf226> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/91e5f5f2-4fbb-4980-aaeb-f2f3a064a1d5> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/0b83f04e-098c-4ea9-82c3-0b1139abff2e> .
+
+    # Phase: SSP_BLDG_51
+    <https://veniss.net/presence/0b83f04e-098c-4ea9-82c3-0b1139abff2e> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/8235db30-63be-4538-a6fd-0fa2286f611d> ;
+      crm:P138i_has_representation <https://veniss.net/presence/0b83f04e-098c-4ea9-82c3-0b1139abff2e/2drepresentation/f648c019-7853-4a3a-abf7-e0f0e7c5fd3e> .
+
+    <https://veniss.net/timespan/8235db30-63be-4538-a6fd-0fa2286f611d> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1831-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/0b83f04e-098c-4ea9-82c3-0b1139abff2e/2drepresentation/f648c019-7853-4a3a-abf7-e0f0e7c5fd3e> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_51" .
+
+  }
+}
+
+
+================================================================================
+Building 48/51: SSP_BLDG_42
+Name: Pump 42
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/28d65d9c-103a-4b7d-8763-74f92c9064af> a veniss:Building ;
+      rdfs:label "Pump" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/6eed6704-274e-4736-811d-059ebb68a38b> .
+
+    # Identifier
+    <https://veniss.net/builtwork/28d65d9c-103a-4b7d-8763-74f92c9064af/identifier/494fdbbc-153b-488c-8b8e-f4abf22219ae> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_42" .
+
+    <https://veniss.net/builtwork/28d65d9c-103a-4b7d-8763-74f92c9064af> crm:P1_is_identified_by <https://veniss.net/builtwork/28d65d9c-103a-4b7d-8763-74f92c9064af/identifier/494fdbbc-153b-488c-8b8e-f4abf22219ae> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/6eed6704-274e-4736-811d-059ebb68a38b> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/dfcf0830-41e8-4c86-82f8-081b718ccb14> .
+
+    # Phase: SSP_BLDG_42
+    <https://veniss.net/presence/dfcf0830-41e8-4c86-82f8-081b718ccb14> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/aa026812-e42c-42f9-8139-ac52990ec8b7> ;
+      crm:P138i_has_representation <https://veniss.net/presence/dfcf0830-41e8-4c86-82f8-081b718ccb14/2drepresentation/4707048c-7453-465b-8678-583653a7de62> .
+
+    <https://veniss.net/timespan/aa026812-e42c-42f9-8139-ac52990ec8b7> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/dfcf0830-41e8-4c86-82f8-081b718ccb14/2drepresentation/4707048c-7453-465b-8678-583653a7de62> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_42" .
+
+  }
+}
+
+
+================================================================================
+Building 49/51: SSP_BLDG_43
+Name: Pump 43
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/581b5b5a-137b-4e8e-b2c5-0c0706bfceb1> a veniss:Building ;
+      rdfs:label "Pump" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/7aed6bef-6aa3-4af6-96b9-798653a1c7a3> .
+
+    # Identifier
+    <https://veniss.net/builtwork/581b5b5a-137b-4e8e-b2c5-0c0706bfceb1/identifier/d4de3b00-fea1-427c-a549-71a325a56a43> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_43" .
+
+    <https://veniss.net/builtwork/581b5b5a-137b-4e8e-b2c5-0c0706bfceb1> crm:P1_is_identified_by <https://veniss.net/builtwork/581b5b5a-137b-4e8e-b2c5-0c0706bfceb1/identifier/d4de3b00-fea1-427c-a549-71a325a56a43> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/7aed6bef-6aa3-4af6-96b9-798653a1c7a3> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/379009d6-32f7-4074-86f7-343d5f8b7a07> .
+
+    # Phase: SSP_BLDG_43
+    <https://veniss.net/presence/379009d6-32f7-4074-86f7-343d5f8b7a07> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/bc46868b-e3b6-4f90-ba55-34215a44ea28> ;
+      crm:P138i_has_representation <https://veniss.net/presence/379009d6-32f7-4074-86f7-343d5f8b7a07/2drepresentation/edc0eab3-4fb3-4fe4-8db9-17fa31e9dcc2> .
+
+    <https://veniss.net/timespan/bc46868b-e3b6-4f90-ba55-34215a44ea28> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/379009d6-32f7-4074-86f7-343d5f8b7a07/2drepresentation/edc0eab3-4fb3-4fe4-8db9-17fa31e9dcc2> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_43" .
+
+  }
+}
+
+
+================================================================================
+Building 50/51: SSP_BLDG_44
+Name: Dock 44
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/290a8f9c-506d-4759-af9f-263184894195> a veniss:Building ;
+      rdfs:label "Dock" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/b47f5126-f32f-4275-b207-c0a21650d97d> .
+
+    # Identifier
+    <https://veniss.net/builtwork/290a8f9c-506d-4759-af9f-263184894195/identifier/58b2390a-af9e-46b9-9e20-e14cbe17cd19> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_44" .
+
+    <https://veniss.net/builtwork/290a8f9c-506d-4759-af9f-263184894195> crm:P1_is_identified_by <https://veniss.net/builtwork/290a8f9c-506d-4759-af9f-263184894195/identifier/58b2390a-af9e-46b9-9e20-e14cbe17cd19> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/b47f5126-f32f-4275-b207-c0a21650d97d> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/6bb63e62-d743-4c82-87f7-4053bedec3ab> .
+
+    # Phase: SSP_BLDG_44
+    <https://veniss.net/presence/6bb63e62-d743-4c82-87f7-4053bedec3ab> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/a6e27327-0314-4a44-8d94-82437a0e5fbd> ;
+      crm:P138i_has_representation <https://veniss.net/presence/6bb63e62-d743-4c82-87f7-4053bedec3ab/2drepresentation/3a6578e4-262f-469b-80f9-9f462b66f05d> .
+
+    <https://veniss.net/timespan/a6e27327-0314-4a44-8d94-82437a0e5fbd> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/6bb63e62-d743-4c82-87f7-4053bedec3ab/2drepresentation/3a6578e4-262f-469b-80f9-9f462b66f05d> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_44" .
+
+  }
+}
+
+
+================================================================================
+Building 51/51: SSP_BLDG_46
+Name: Dock 46
+Number of phases: 1
+================================================================================
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX veniss: <https://veniss.net/ontology#>
+
+INSERT DATA {
+  GRAPH <http://www.researchspace.org/resource/g/data> {
+
+    # Building node
+    <https://veniss.net/builtwork/3327632b-ad9b-48bc-b76c-79393483a028> a veniss:Building ;
+      rdfs:label "Dock" ;
+      crm:P53_has_former_or_current_location <https://veniss.net/resource/builtwork/d654e054-dd23-419a-baab-ee40342694ae> ;
+      crm:P196i_is_defined_by <https://veniss.net/physical_changes/676d6827-75a3-496f-b4eb-4af4d7f29d81> .
+
+    # Identifier
+    <https://veniss.net/builtwork/3327632b-ad9b-48bc-b76c-79393483a028/identifier/169ffadd-4b6b-49a7-9012-f7899b86a7c6> a crm:E42_Identifier ;
+      rdfs:value "SSP_BLDG_46" .
+
+    <https://veniss.net/builtwork/3327632b-ad9b-48bc-b76c-79393483a028> crm:P1_is_identified_by <https://veniss.net/builtwork/3327632b-ad9b-48bc-b76c-79393483a028/identifier/169ffadd-4b6b-49a7-9012-f7899b86a7c6> .
+
+    # Physical changes container
+    <https://veniss.net/physical_changes/676d6827-75a3-496f-b4eb-4af4d7f29d81> a crm:E92_Spacetime_Volume ;
+      crm:P166i_had_presence
+        <https://veniss.net/presence/26149c6b-8e48-46c2-b737-f1bb71235383> .
+
+    # Phase: SSP_BLDG_46
+    <https://veniss.net/presence/26149c6b-8e48-46c2-b737-f1bb71235383> a crm:E93_Presence ;
+      crm:P4_has_time-span <https://veniss.net/timespan/bba4c1d0-41ad-46c4-b711-384f35c23f54> ;
+      crm:P138i_has_representation <https://veniss.net/presence/26149c6b-8e48-46c2-b737-f1bb71235383/2drepresentation/87d205a9-d36a-4a96-8014-a0bab94ad545> .
+
+    <https://veniss.net/timespan/bba4c1d0-41ad-46c4-b711-384f35c23f54> a crm:E52_Time-Span ;
+      crm:P82a_begin_of_the_begin "1931-01-01"^^xsd:date
+      .
+
+    <https://veniss.net/presence/26149c6b-8e48-46c2-b737-f1bb71235383/2drepresentation/87d205a9-d36a-4a96-8014-a0bab94ad545> crm:P2_has_type <https://veniss.net/ontology#2d_representation> ;
+      rdfs:label "SSP_BLDG_46" .
 
   }
 }

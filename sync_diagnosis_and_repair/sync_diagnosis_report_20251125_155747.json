@@ -1,0 +1,9 @@
+{
+  "missing_from_production": [],
+  "orphaned_in_production": [],
+  "orphaned_feature_sources": [],
+  "source_name_mismatches": [],
+  "missing_triggers": [],
+  "rdf_mismatches": [],
+  "table_structure_issues": []
+}

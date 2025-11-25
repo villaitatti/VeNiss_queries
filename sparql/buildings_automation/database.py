@@ -133,7 +133,7 @@ def calculate_phase_dates(source_columns: List[str], building_row: Dict,
     Returns:
         Tuple of (bob_year, eoe_year) or None if no valid sources
     """
-    active_sources = [col for col in source_columns if building_row.get(col) is True]
+    active_sources = [col for col in source_columns if building_row.get(col)]
     
     if not active_sources:
         return None

@@ -41,8 +41,7 @@ URI_TEMPLATES = {
     'identifier': 'https://veniss.net/builtwork/{building_uuid}/identifier/{uuid}',
     'physical_changes': 'https://veniss.net/physical_changes/{uuid}',
     'presence': 'https://veniss.net/presence/{uuid}',
-    'timespan': 'https://veniss.net/timespan/{uuid}',
-    'representation_2d': 'https://veniss.net/2d_rep/{uuid}'
+    'timespan': 'https://veniss.net/timespan/{uuid}'
 }
 
 # Schema Names
@@ -52,3 +51,29 @@ SOURCES_YEARS_TABLE = os.getenv('SOURCES_YEARS_TABLE', 'sources_years')
 
 # Special Column Names (these are metadata, not source columns)
 METADATA_COLUMNS = ['identifier', 'geometry', 'identifier_short', 'name']
+
+
+def validate_config():
+    """
+    Validate that all required configuration values are set.
+    Raises ValueError if any required values are missing.
+    """
+    missing = []
+    
+    # Check required database config
+    if not DB_CONFIG.get('user'):
+        missing.append('DB_USER')
+    if not DB_CONFIG.get('password'):
+        missing.append('DB_PASSWORD')
+    
+    # Check required SPARQL config
+    if not SPARQL_CONFIG.get('username'):
+        missing.append('SPARQL_USERNAME')
+    if not SPARQL_CONFIG.get('password'):
+        missing.append('SPARQL_PASSWORD')
+    
+    if missing:
+        raise ValueError(
+            f"Missing required environment variables: {', '.join(missing)}\n"
+            f"Please configure these in your .env file."
+        )

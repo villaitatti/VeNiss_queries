@@ -13,6 +13,7 @@ import sys
 from datetime import datetime
 from typing import List, Dict
 
+import config
 import database
 import sparql
 
@@ -248,6 +249,13 @@ def main():
     )
     
     args = parser.parse_args()
+    
+    # Validate configuration before proceeding
+    try:
+        config.validate_config()
+    except ValueError as e:
+        print(f"Configuration error: {e}", file=sys.stderr)
+        sys.exit(1)
     
     # Setup logging
     logger = setup_logging(args.output_dir, args.dry_run)

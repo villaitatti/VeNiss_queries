@@ -1,0 +1,124 @@
+{
+  "missing_from_production": [
+    {
+      "table": "qgis_sangiorgioinalga_buildings",
+      "count": 19,
+      "identifiers": [
+        "SGA_BLDG_1",
+        "SGA_BLDG_10",
+        "SGA_BLDG_11",
+        "SGA_BLDG_12",
+        "SGA_BLDG_13",
+        "SGA_BLDG_14",
+        "SGA_BLDG_15",
+        "SGA_BLDG_16",
+        "SGA_BLDG_17",
+        "SGA_BLDG_18",
+        "SGA_BLDG_19",
+        "SGA_BLDG_2",
+        "SGA_BLDG_3",
+        "SGA_BLDG_4",
+        "SGA_BLDG_5",
+        "SGA_BLDG_6",
+        "SGA_BLDG_7",
+        "SGA_BLDG_8",
+        "SGA_BLDG_9"
+      ]
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "count": 1,
+      "identifiers": [
+        "SSC_OPS_01"
+      ]
+    }
+  ],
+  "orphaned_in_production": [
+    "SSP_BLDG 11.2",
+    "SSP_BLDG_11.3a",
+    "SSP_BUILDINGS_11.1"
+  ],
+  "orphaned_feature_sources": [
+    "SSP_BLDG",
+    "SSP_BLDG_13",
+    "SSP_BLDG_13.1"
+  ],
+  "source_name_mismatches": [
+    {
+      "table": "qgis_sangiorgioinalga_buildings",
+      "column": "1550",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sangiorgioinalga_buildings",
+      "column": "1869",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.22",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.23",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.33",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.37",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.38",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:dis.39",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "column": "1694:loggia",
+      "issue": "Source column not found in PRODUCTION.sources_years"
+    }
+  ],
+  "missing_triggers": [
+    {
+      "table": "qgis_lazzarettonuovo_openspaces",
+      "missing": [
+        "insert_veniss_data",
+        "update_veniss_data",
+        "delete_veniss_data"
+      ],
+      "existing": []
+    },
+    {
+      "table": "qgis_sangiorgioinalga_buildings",
+      "missing": [
+        "insert_veniss_data",
+        "update_veniss_data",
+        "delete_veniss_data"
+      ],
+      "existing": []
+    },
+    {
+      "table": "qgis_sansecondo_openspaces",
+      "missing": [
+        "insert_veniss_data",
+        "update_veniss_data",
+        "delete_veniss_data"
+      ],
+      "existing": []
+    }
+  ],
+  "rdf_mismatches": [],
+  "table_structure_issues": []
+}
