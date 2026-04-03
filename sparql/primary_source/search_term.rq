@@ -1,10 +1,8 @@
-PREFIX ontology: <http://dbpedia.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX crm:  <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX veniss_ontology: <https://veniss.net/ontology#>
 PREFIX veniss_types: <https://veniss.net/resource/type/>
-
 
 INSERT {
   ?item crm:P1_is_identified_by ?st .
@@ -13,67 +11,143 @@ INSERT {
       rdfs:label ?label .
 }
 WHERE {
-  # just pick Events
-  ?item rdf:type veniss_ontology:Event .
+  ?item rdf:type veniss_ontology:Source_Primary .
 
   # ---- only insert if there is NOT already a search_term ----
   FILTER NOT EXISTS {
     ?item crm:P1_is_identified_by ?existingSt .
     ?existingSt a crm:E41_Appellation ;
-                crm:P2_has_type veniss_types:search_term ;
-                rdfs:label ?existingLabel .
+                crm:P2_has_type veniss_types:search_term .
   }
 
-  # ---- event label (any available label; collapse to one) ----
+  # ---- attributed title (one search_term per language variant) ----
+  ?item crm:P1_is_identified_by ?title_node .
+  ?title_node crm:P2_has_type veniss_types:attributed_title ;
+              rdfs:label ?title_label .
+
+  # ---- location path (fixed-depth, 7 levels) ----
   OPTIONAL {
-    SELECT ?item ?event_label
-    WHERE {
-      ?item rdfs:label ?event_label
+    ?item crm:P53_has_former_or_current_location ?location .
+
+    # Archival / Current: entity via P53, then hierarchy
+    OPTIONAL {
+      ?location crm:P53_has_former_or_current_location ?ref .
+
+      OPTIONAL { ?ref crm:P1_is_identified_by ?acr0 . ?acr0 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a0 . }
+      OPTIONAL { ?ref rdfs:label ?r0_it . FILTER(lang(?r0_it) = "it" || lang(?r0_it) = "") }
+      OPTIONAL { ?ref rdfs:label ?r0_en . FILTER(lang(?r0_en) = "en") }
+      BIND(COALESCE(?a0, ?r0_it, ?r0_en) AS ?n0)
+
+      OPTIONAL {
+        ?ref crm:P46i_forms_part_of ?p1 .
+        OPTIONAL { ?p1 crm:P1_is_identified_by ?acr1 . ?acr1 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a1 . }
+        OPTIONAL { ?p1 rdfs:label ?r1_it . FILTER(lang(?r1_it) = "it" || lang(?r1_it) = "") }
+        OPTIONAL { ?p1 rdfs:label ?r1_en . FILTER(lang(?r1_en) = "en") }
+        BIND(COALESCE(?a1, ?r1_it, ?r1_en) AS ?n1)
+
+        OPTIONAL {
+          ?p1 crm:P46i_forms_part_of ?p2 .
+          OPTIONAL { ?p2 crm:P1_is_identified_by ?acr2 . ?acr2 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a2 . }
+          OPTIONAL { ?p2 rdfs:label ?r2_it . FILTER(lang(?r2_it) = "it" || lang(?r2_it) = "") }
+          OPTIONAL { ?p2 rdfs:label ?r2_en . FILTER(lang(?r2_en) = "en") }
+          BIND(COALESCE(?a2, ?r2_it, ?r2_en) AS ?n2)
+
+          OPTIONAL {
+            ?p2 crm:P46i_forms_part_of ?p3 .
+            OPTIONAL { ?p3 crm:P1_is_identified_by ?acr3 . ?acr3 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a3 . }
+            OPTIONAL { ?p3 rdfs:label ?r3_it . FILTER(lang(?r3_it) = "it" || lang(?r3_it) = "") }
+            OPTIONAL { ?p3 rdfs:label ?r3_en . FILTER(lang(?r3_en) = "en") }
+            BIND(COALESCE(?a3, ?r3_it, ?r3_en) AS ?n3)
+
+            OPTIONAL {
+              ?p3 crm:P46i_forms_part_of ?p4 .
+              OPTIONAL { ?p4 crm:P1_is_identified_by ?acr4 . ?acr4 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a4 . }
+              OPTIONAL { ?p4 rdfs:label ?r4_it . FILTER(lang(?r4_it) = "it" || lang(?r4_it) = "") }
+              OPTIONAL { ?p4 rdfs:label ?r4_en . FILTER(lang(?r4_en) = "en") }
+              BIND(COALESCE(?a4, ?r4_it, ?r4_en) AS ?n4)
+
+              OPTIONAL {
+                ?p4 crm:P46i_forms_part_of ?p5 .
+                OPTIONAL { ?p5 crm:P1_is_identified_by ?acr5 . ?acr5 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a5 . }
+                OPTIONAL { ?p5 rdfs:label ?r5_it . FILTER(lang(?r5_it) = "it" || lang(?r5_it) = "") }
+                OPTIONAL { ?p5 rdfs:label ?r5_en . FILTER(lang(?r5_en) = "en") }
+                BIND(COALESCE(?a5, ?r5_it, ?r5_en) AS ?n5)
+
+                OPTIONAL {
+                  ?p5 crm:P46i_forms_part_of ?p6 .
+                  OPTIONAL { ?p6 crm:P1_is_identified_by ?acr6 . ?acr6 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a6 . }
+                  OPTIONAL { ?p6 rdfs:label ?r6_it . FILTER(lang(?r6_it) = "it" || lang(?r6_it) = "") }
+                  OPTIONAL { ?p6 rdfs:label ?r6_en . FILTER(lang(?r6_en) = "en") }
+                  BIND(COALESCE(?a6, ?r6_it, ?r6_en) AS ?n6)
+
+                  OPTIONAL {
+                    ?p6 crm:P46i_forms_part_of ?p7 .
+                    OPTIONAL { ?p7 crm:P1_is_identified_by ?acr7 . ?acr7 a crm:E41_Appellation ; crm:P2_has_type veniss_types:acronym ; rdfs:label ?a7 . }
+                    OPTIONAL { ?p7 rdfs:label ?r7_it . FILTER(lang(?r7_it) = "it" || lang(?r7_it) = "") }
+                    OPTIONAL { ?p7 rdfs:label ?r7_en . FILTER(lang(?r7_en) = "en") }
+                    BIND(COALESCE(?a7, ?r7_it, ?r7_en) AS ?n7)
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      BIND(CONCAT(
+        IF(BOUND(?n7), CONCAT(?n7, ", "), ""),
+        IF(BOUND(?n6), CONCAT(?n6, ", "), ""),
+        IF(BOUND(?n5), CONCAT(?n5, ", "), ""),
+        IF(BOUND(?n4), CONCAT(?n4, ", "), ""),
+        IF(BOUND(?n3), CONCAT(?n3, ", "), ""),
+        IF(BOUND(?n2), CONCAT(?n2, ", "), ""),
+        IF(BOUND(?n1), CONCAT(?n1, ", "), ""),
+        COALESCE(?n0, "")
+      ) AS ?archival_path)
     }
+
+    # Secondary source: bibitem reference
+    OPTIONAL {
+      ?location crm:P46i_forms_part_of ?bibitem .
+      ?bibitem rdfs:label ?bib_label .
+    }
+
+    BIND(COALESCE(?archival_path, STR(?bib_label), "") AS ?loc_path)
   }
 
-  # ---- island (language-neutral; collapse to one) ----
+  # ---- island (collapse to one) ----
   OPTIONAL {
     SELECT ?item (SAMPLE(STR(?il)) AS ?island)
     WHERE {
       ?item veniss_ontology:has_island ?islandRes .
-      ?islandRes rdfs:label ?il .
+      ?islandRes crm:P1_is_identified_by ?island_id .
+      ?island_id rdfs:label ?il .
     }
     GROUP BY ?item
   }
 
-  # ---- typology (collapse to one) ----
+  # ---- year (collapse to one) ----
   OPTIONAL {
-    SELECT ?item (SAMPLE(STR(?tl)) AS ?typology)
+    SELECT ?item (SAMPLE(STR(?yl)) AS ?year)
     WHERE {
-      ?item crm:P2_has_type ?type_node .
-      ?type_node crm:P71i_is_listed_in <https://veniss.net/resource/vocab/event_types> ;
-                 rdfs:label ?tl .
+      ?item crm:P108i_was_produced_by ?production .
+      ?production a crm:E12_Production ;
+                  crm:P4_has_time-span ?timespan .
+      ?timespan crm:P170i_time_is_defined_by ?ytp .
+      ?ytp crm:P2_has_type veniss_types:time_primitive_year ;
+           rdfs:label ?yl .
     }
     GROUP BY ?item
   }
 
-  # ---- date (language-neutral; collapse to one) ----
-  OPTIONAL {
-    SELECT ?item (SAMPLE(STR(?dl)) AS ?date)
-    WHERE {
-      ?item crm:P4_has_time-span ?timespan .
-      ?timespan crm:P170i_time_is_defined_by ?time_primitive .
-      ?time_primitive a crm:E61_Time-Primitive ;
-                      crm:P2_has_type <https://veniss.net/resource/type/time_primitive_year> ;
-                      rdfs:label ?dl .
-    }
-    GROUP BY ?item
-  }
-
-  # ---- compose the final label (no language tag here) ----
+  # ---- compose the final label ----
   BIND(CONCAT(
-        COALESCE(?event_label, ""),
-        IF(BOUND(?island),   CONCAT(" ", ?island),   ""),
-        IF(BOUND(?typology), CONCAT(" ", ?typology), ""),
-        IF(BOUND(?date),     CONCAT(" ", ?date),     "")
-      ) AS ?label)
+    STR(?title_label),
+    IF(BOUND(?loc_path) && ?loc_path != "", CONCAT(" ", ?loc_path), ""),
+    IF(BOUND(?island), CONCAT(" ", ?island), ""),
+    IF(BOUND(?year), CONCAT(" ", ?year), "")
+  ) AS ?label)
 
   # ---- mint the new search_term node IRI ----
-  BIND( IRI(CONCAT(STR(?item), "/search_term/", STRUUID())) AS ?st )
+  BIND(IRI(CONCAT(STR(?item), "/search_term/", STRUUID())) AS ?st)
 }
